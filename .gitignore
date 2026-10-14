@@ -1,0 +1,25 @@
+# Nur die Website wird veröffentlicht. Alles andere (Sicherungen, Screenshots,
+# Arbeitsnotizen, Originaldateien) bleibt lokal.
+/*
+!/.gitignore
+!/index.html
+!/impressum.html
+!/datenschutz.html
+!/legal.css
+!/CNAME
+!/robots.txt
+
+# Aus brand_assets nur die Dateien, die die Seite wirklich lädt
+!/brand_assets/
+/brand_assets/*
+!/brand_assets/prestige_logo_new.png
+!/brand_assets/prestige_logo_new_small.png
+!/brand_assets/team-oli.jpg
+!/brand_assets/team-aleks.jpg
+!/brand_assets/Prestige Back Oli & Aleks.jpeg
+!/brand_assets/leistungen-motion-16x9.mp4
+!/brand_assets/leistungen-motion-16x9-poster.jpg
+!/brand_assets/slider/
+/brand_assets/slider/*
+!/brand_assets/slider/vorher-1080.jpg
+!/brand_assets/slider/nachher-1080.jpg

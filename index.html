@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Prestige Boat Detailing – Professionelle Bootsaufbereitung in Köln</title>
+  <meta name="description" content="Mobile, professionelle Bootsaufbereitung in Köln und Umkreis: Außenreinigung, Gelcoat-Politur, Edelstahl, Keramikversiegelung, Antifouling, Innen- und Polsterreinigung. Jetzt unverbindlich anfragen.">
+  <meta name="theme-color" content="#050505">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Prestige Boat Detailing – Bootsaufbereitung in Köln">
+  <meta property="og:description" content="Wir bringen Ihr Boot zurück in Bestform. Mobiler Service in Köln und Umkreis.">
+  <meta property="og:image" content="brand_assets/prestige_logo_new.png">
+  <link rel="icon" type="image/png" href="brand_assets/prestige_logo_new_small.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="brand_assets/prestige_logo_new.png">
+  <script>document.documentElement.classList.add('js');try{var _l=localStorage.getItem('pbd-lang');if(_l==='en'||_l==='nl')document.documentElement.lang=_l}catch(e){}</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Prestige Boat Detailing",
+    "description": "Mobile, professionelle Bootsaufbereitung in Köln und Umkreis.",
+    "telephone": "+491792112965",
+    "email": "boatdetailing.prestige@gmail.com",
+    "areaServed": "Köln und Umkreis",
+    "address": { "@type": "PostalAddress", "addressLocality": "Köln", "addressCountry": "DE" },
+    "sameAs": ["https://www.instagram.com/prestigeboatdetailing"]
+  }
+  </script>
+  <style>
+    /* ═════════ TOKENS ═════════ */
+    :root{
+      --bg:#050505;
+      --bg-2:#0E0E0F;
+      --text:#F5F5F5;
+      --text-2:#A3A3A8;
+      --chrome:#D0D0D3;
+      --blue:#0A88F5;
+      --blue-hi:#38A0FF;
+      --hair:rgba(255,255,255,.22);
+      --hair-soft:rgba(255,255,255,.11);
+      --nav1:rgba(5,5,5,.9); --nav2:rgba(5,5,5,.55);
+      --glass:rgba(255,255,255,.05); --glass-2:rgba(255,255,255,.09); --glass-hover:rgba(255,255,255,.09);
+      --ring:rgba(255,255,255,.12); --ring-2:rgba(255,255,255,.18);
+      --card-g1:rgba(255,255,255,.04); --card-g2:rgba(255,255,255,.012);
+      --ph-bg:#0C0C0D; --err:#E8A3A0; --muted:#6B6B70;
+      --word-g:linear-gradient(180deg,#FFFFFF 0%,#EEF2F6 30%,#B4BFCB 47.5%,#2A323C 48.5%,#5E6C7B 49.5%,#C8D3DE 52%,#F4F7FA 78%,#FFFFFF 100%);--word-sh:rgba(0,0,0,.9);
+      --word-stroke:rgba(255,255,255,.75);
+      --fw-a:#F6F8FA; --fw-b:#B9C4D0; --fw-stroke:rgba(255,255,255,.5);
+      --sub:#C3CCD6; --line:rgba(255,255,255,.7); --dots:rgba(255,255,255,.11);
+      --sea-deep:#050505; --menu-shadow:rgba(0,0,0,.6);
+      --page-bg:#050505;
+      color-scheme:dark;
+
+      --fs-display:clamp(38px,6vw,88px);
+      --fs-h2:clamp(30px,4vw,56px);
+      --fs-h3:clamp(22px,2.4vw,32px);
+      --fs-h4:clamp(18px,1.5vw,21px);
+      --fs-lead:clamp(17px,1.25vw,19px);
+      --fs-body:16px;
+      --fs-small:14px;
+      --fs-label:12px;
+
+      --f-serif:'Playfair Display','Didot','Bodoni MT',Georgia,serif;
+      --f-sans:'Montserrat',system-ui,-apple-system,'Segoe UI',sans-serif;
+
+      --ease:cubic-bezier(.25,.46,.45,.94);
+      --wrap:1320px;
+      --gut:clamp(20px,5vw,72px);
+      --sec:clamp(44px,5.4vw,84px);
+      --nav:76px;
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html{background:var(--bg);scroll-behavior:smooth;scroll-padding-top:calc(var(--nav) + 8px);-webkit-text-size-adjust:100%}
+    body{margin:0;background:transparent;color:var(--text-2);font:400 16px/1.65 var(--f-sans);letter-spacing:.01em;-webkit-font-smoothing:antialiased;overflow-x:clip}
+    /* Hintergrund: dunkler Verlauf mit feinem Punktraster (ruhig, fest, ohne Bewegung) */
+    body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:var(--page-bg)}
+    body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+      background-image:radial-gradient(var(--dots) 1px,transparent 1.2px);background-size:30px 30px;
+      -webkit-mask-image:radial-gradient(85% 70% at 50% 35%,#000 15%,transparent 75%);mask-image:radial-gradient(85% 70% at 50% 35%,#000 15%,transparent 75%)}
+    img,video{display:block;max-width:100%}
+    a{color:inherit;text-decoration:none}
+    ::selection{background:var(--blue);color:var(--bg)}
+    :focus-visible{outline:1px solid var(--blue-hi);outline-offset:4px}
+    .wrap{width:100%;max-width:var(--wrap);margin-inline:auto;padding-inline:var(--gut)}
+    .sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+    .skip{position:fixed;left:16px;top:16px;z-index:200;padding:12px 18px;background:var(--text);color:var(--bg);font-size:var(--fs-small);transform:translateY(-200%)}
+    .skip:focus{transform:none}
+    .ic{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+    /* ═════════ TYPO ═════════ */
+    .eyebrow{display:flex;align-items:center;gap:14px;margin:0 0 14px;font:500 var(--fs-label)/1.4 var(--f-sans);letter-spacing:.32em;text-transform:uppercase;color:var(--blue-hi)}
+    .eyebrow::before{content:"";width:44px;height:1px;background:currentColor;opacity:.7}
+    .h2{margin:0;font:400 var(--fs-h2)/1.02 var(--f-serif);letter-spacing:-.02em;color:var(--text);text-wrap:balance}
+    .h2 em{font-style:normal;color:transparent;background:linear-gradient(100deg,var(--blue-hi),var(--blue) 60%,#0568C8);-webkit-background-clip:text;background-clip:text}
+    .lead{margin:16px 0 0;max-width:46ch;font-size:var(--fs-lead);line-height:1.65}
+    .label{font:500 var(--fs-label)/1.4 var(--f-sans);letter-spacing:.24em;text-transform:uppercase}
+
+    /* Einblenden (nur beim Scrollen, einmalig) */
+    .js .rv{opacity:0;transform:translateY(26px);transition:opacity 1s var(--ease),transform 1s var(--ease);transition-delay:calc(var(--d,0) * 110ms)}
+    .js .rv.in{opacity:1;transform:none}
+
+    /* ═════════ NAV ═════════ */
+    .nav{position:fixed;inset:0 0 auto 0;z-index:70;height:var(--nav);background:linear-gradient(180deg,var(--nav1),var(--nav2));-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+    .nav::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--hair-soft)}
+    .nav-prog{position:absolute;left:0;bottom:0;height:1px;width:100%;background:var(--blue-hi);transform:scaleX(0);transform-origin:left;z-index:1}
+    .nav .wrap.nav-in{max-width:none;padding-inline:clamp(20px,3.4vw,56px)}
+    .nav-in{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:14px;color:var(--text)}
+    .brand img{width:44px;height:auto}
+    .brand-tx{font:500 var(--fs-label)/1.4 var(--f-sans);letter-spacing:.24em;text-transform:uppercase;color:var(--text);white-space:nowrap}
+    .nav-links{display:flex;align-items:center;gap:2px;padding:4px;border-radius:999px;background:var(--glass);box-shadow:0 0 0 1px var(--ring);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+    .nav-links a{font:500 var(--fs-label)/1 var(--f-sans);letter-spacing:.2em;text-transform:uppercase;color:var(--text-2);padding:13px 16px;border-radius:999px;transition:color .2s,background .2s}
+    .nav-links a:hover{background:var(--glass-hover)}
+    .nav-links{margin-left:auto}
+    .tools{display:flex;align-items:center;gap:8px;margin-left:14px}
+    .lang{position:relative}
+    .lang-btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;height:40px;padding:0 14px;border:0;border-radius:999px;background:var(--glass);box-shadow:0 0 0 1px var(--ring);color:var(--text);font:500 var(--fs-label)/1 var(--f-sans);letter-spacing:.18em;text-transform:uppercase;cursor:pointer;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);transition:background .2s}
+    .lang-btn:hover{background:var(--glass-hover)}
+    .lang-btn .ic{width:12px;height:12px;stroke-width:2}
+    .lang-menu{position:absolute;right:0;top:calc(100% + 8px);min-width:156px;padding:6px;border-radius:14px;background:var(--bg-2);box-shadow:0 0 0 1px var(--ring),0 24px 60px -20px var(--menu-shadow);display:none;z-index:80}
+    .lang-menu.open{display:block}
+    .lang-menu button{display:block;width:100%;text-align:left;padding:11px 14px;border:0;border-radius:10px;background:none;color:var(--text-2);font:500 var(--fs-body)/1 var(--f-sans);letter-spacing:.06em;cursor:pointer}
+    .lang-menu button:hover,.lang-menu button[aria-current="true"]{color:var(--text);background:var(--glass-hover)}
+    /* Handy: kein Logo-Bild, links nur der Name */
+    @media (max-width:560px){.brand img{display:none}.brand-tx{letter-spacing:.12em}.tools{gap:2px}.lang-btn{padding:0 10px}.nav-in .burger{width:40px;flex:none}.nav-in .burger i{left:9px;right:9px}}
+    @media (max-width:370px){.brand-tx .bt{display:none}}
+    @media (max-width:1180px){.nav-links a{padding:13px 10px;letter-spacing:.14em}.tools{margin-left:8px}}
+    .nav-links a.nav-cta{display:inline-flex;align-items:center;gap:8px;margin-left:4px;background:var(--text);color:var(--bg)}
+    .nav-links a.nav-cta:hover,.nav-links a.nav-cta:focus-visible{background:#fff;color:var(--bg)}
+    .nav-cta .ic{width:14px;height:14px;stroke-width:2}
+    .nav-links a:hover,.nav-links a:focus-visible{color:var(--text)}
+    .burger{display:none;width:46px;height:46px;border:0;background:none;color:var(--text);cursor:pointer;position:relative}
+    .burger i{position:absolute;left:11px;right:11px;height:1px;background:currentColor}
+    .burger i:first-child{top:19px}.burger i:last-child{top:26px}
+    .mnav{position:fixed;inset:0;z-index:65;background:var(--bg);display:flex;flex-direction:column;justify-content:center;padding:calc(var(--nav) + 24px) var(--gut) 40px;opacity:0;visibility:hidden;transition:opacity .3s var(--ease),visibility 0s .3s}
+    .mnav.open{opacity:1;visibility:visible;transition:opacity .3s var(--ease)}
+    .mnav a.ml{display:block;padding:14px 0;border-bottom:1px solid var(--hair-soft);font:400 var(--fs-h3)/1.2 var(--f-serif);color:var(--text)}
+    .mnav-foot{margin-top:36px;display:grid;gap:8px;font-size:var(--fs-body)}
+
+    /* ═════════ HERO (angeheftet, scrollgesteuert) ═════════ */
+    .hero{position:relative;min-height:100svh}
+        .hero-pin{--lw:min(50svh,86vw);position:relative;min-height:100svh;overflow:hidden;isolation:isolate}
+        .hero-bg{position:absolute;inset:0;z-index:-2;background:none}
+    @keyframes wordIn{from{opacity:0;filter:blur(16px)}to{opacity:1;filter:blur(0)}}
+    .medal-stage{position:absolute;left:0;right:0;top:4svh;height:60%;display:grid;place-items:center;perspective:1500px}
+    .medal{position:relative;width:min(38svh,70vw);aspect-ratio:868/842;transform-style:preserve-3d;will-change:transform}
+    .medal img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;user-select:none;-webkit-user-drag:none}
+    .medal .m-edge{opacity:var(--edge,0);backface-visibility:visible;filter:brightness(0) invert(.55) sepia(.25) hue-rotate(185deg) saturate(1.6)}
+    .medal .m-front,.medal .m-back{backface-visibility:hidden}
+    .medal .m-back{transform:rotateY(180deg) translateZ(var(--th,14px))}
+    .medal .m-front{transform:none}
+    .m-shine{position:absolute;inset:0;pointer-events:none;backface-visibility:hidden;transform:translateZ(calc(var(--th,14px) + .5px));
+      background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.9) 50%,transparent 60%) var(--sh,120%) 0/300% 100% no-repeat;
+      -webkit-mask:url(brand_assets/prestige_logo_new_small.png) center/contain no-repeat;mask:url(brand_assets/prestige_logo_new_small.png) center/contain no-repeat}
+    .hero-copy{position:absolute;left:0;right:0;top:calc(var(--nav) + 3svh + var(--lw) * .9555 + clamp(14px,2.6svh,28px));display:flex;flex-direction:column;align-items:center;padding-inline:var(--gut);text-align:center}
+    .badge{display:inline-flex;align-items:center;gap:12px;padding:7px 14px 7px 8px;border-radius:999px;background:rgba(255,255,255,.07);box-shadow:0 0 0 1px rgba(255,255,255,.13);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+    .badge b{padding:4px 10px;border-radius:999px;background:var(--text);color:var(--bg);font:500 var(--fs-label)/1.3 var(--f-sans);letter-spacing:.18em;text-transform:uppercase}
+    .badge span{font:500 var(--fs-label)/1.3 var(--f-sans);letter-spacing:.06em;color:var(--text)}
+    .hero-line{margin:16px 0 0;font:400 var(--fs-h2)/1.06 var(--f-serif);letter-spacing:-.02em;color:var(--text);text-wrap:balance}
+    .hero-line em{font-style:normal;color:var(--blue-hi)}
+    .hero-desc{margin:14px 0 0;max-width:56ch;font-size:var(--fs-lead);line-height:1.6;color:var(--text-2)}
+    .hero-btns{margin-top:22px;display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+    .pbtn,.sbtn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font:500 var(--fs-label)/1 var(--f-sans);letter-spacing:.16em;text-transform:uppercase;transition:background .2s,color .2s,box-shadow .2s}
+    .pbtn{background:var(--glass-2);color:var(--text);box-shadow:0 0 0 1px var(--ring-2)}
+    .pbtn:hover,.pbtn:focus-visible{background:var(--glass-hover)}
+    .sbtn{color:var(--text-2)}
+    .sbtn:hover,.sbtn:focus-visible{color:var(--text)}
+    .pbtn .ic,.sbtn .ic{width:16px;height:16px;stroke-width:1.8}
+    /* Start-Animation: Text blendet sich beim Öffnen der Seite gestaffelt ein */
+    .fs{opacity:0;animation:fsIn 1s var(--ease) forwards;animation-delay:calc(.25s + var(--i,0) * .16s)}
+    @keyframes fsIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+
+    /* ═════════ SEKTIONEN ═════════ */
+    .sec{padding-block:var(--sec)}
+    .sec-head{margin-bottom:clamp(22px,3vw,40px)}
+
+    /* Leistungen: große Typografie, scrollgesteuerte Perspektive */
+    .svc{perspective:1200px}
+    .row{display:grid;grid-template-columns:clamp(40px,5vw,72px) 1.1fr 1fr;gap:clamp(14px,2.4vw,40px);align-items:baseline;padding:clamp(14px,1.7vw,24px) 0;border-top:1px solid var(--hair-soft);will-change:transform,opacity}
+    .row:last-child{border-bottom:1px solid var(--hair-soft)}
+    .num{font:400 var(--fs-h4)/1 var(--f-serif);color:var(--blue-hi)}
+    .row h3{margin:0;font:400 var(--fs-h3)/1.1 var(--f-serif);letter-spacing:-.015em;color:var(--text);text-wrap:balance}
+    .row p{margin:0;font-size:var(--fs-body);line-height:1.6}
+    .row p + p{margin-top:8px;font-size:var(--fs-body)}
+
+    /* Mobiler Service: Lauftext, vom Scrollen gesteuert */
+    .mq{overflow:hidden;white-space:nowrap;padding-block:clamp(4px,1vw,12px)}
+    .mq-track{display:inline-block;will-change:transform;font:400 clamp(44px,8vw,120px)/1 var(--f-serif);letter-spacing:-.02em;text-transform:uppercase;color:transparent;-webkit-text-stroke:1.1px rgba(255,255,255,.4)}
+    .mq-track b{font-weight:400;color:var(--blue-hi);-webkit-text-stroke:0;margin-inline:.28em}
+    .mobile{text-align:center;padding-block:clamp(32px,4vw,56px)}
+    .mobile .eyebrow{justify-content:center}
+    .mobile .eyebrow::before{display:none}
+    .mobile .h2{margin-inline:auto;max-width:18ch}
+    .mobile .lead{margin-inline:auto;max-width:44ch}
+    .tri{margin:28px auto 0;max-width:760px;display:grid;grid-template-columns:repeat(3,1fr)}
+    .tri span{padding:10px 12px;color:var(--text)}
+    .tri span + span{border-left:1px solid var(--hair)}
+
+    /* Bewertungen: Spalten laufen ruhig von selbst */
+    .rhead{text-align:center}
+    .rhead .eyebrow{justify-content:center}.rhead .eyebrow::before{display:none}
+    .rhead .lead{margin-inline:auto}
+    .rcols{display:flex;justify-content:center;gap:16px;height:clamp(300px,44svh,400px);overflow:hidden;-webkit-mask-image:linear-gradient(180deg,transparent,#000 18%,#000 82%,transparent);mask-image:linear-gradient(180deg,transparent,#000 18%,#000 82%,transparent)}
+    .rcol{flex:1 1 0;max-width:380px;min-width:0}
+    .rtrack{display:flex;flex-direction:column;gap:16px;padding-bottom:16px;animation:rscroll var(--dur,46s) linear infinite}
+    .rcol:hover .rtrack{animation-play-state:paused}
+    @keyframes rscroll{to{transform:translateY(-50%)}}
+    .rc{margin:0;padding:20px 22px;border-radius:14px;background:linear-gradient(180deg,var(--card-g1),var(--card-g2));box-shadow:0 0 0 1px var(--hair-soft)}
+    .stars{font-size:var(--fs-small);letter-spacing:.18em;color:var(--blue-hi)}
+    .rc blockquote{margin:10px 0 14px;font-size:var(--fs-body);line-height:1.6;color:var(--text)}
+    .rc figcaption{display:flex;align-items:center;gap:12px}
+    .av{display:grid;place-items:center;width:34px;height:34px;flex:none;border:1px solid var(--hair);border-radius:50%;font:500 var(--fs-label)/1 var(--f-sans);letter-spacing:.06em;color:var(--blue-hi)}
+    .rc figcaption b{display:block;font:500 var(--fs-small)/1.3 var(--f-sans);color:var(--text)}
+    .rc figcaption small{display:block;font-size:var(--fs-small);letter-spacing:.06em;color:var(--text-2)}
+    @media (max-width:1000px){.r3{display:none}}
+    @media (max-width:640px){.r2{display:none}}
+
+    /* Das sind wir: gemeinsames Foto links, Einzelportraits kleiner rechts */
+    .team{padding-block:var(--sec)}
+    .team-grid{display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-areas:"back head" "back singles";grid-template-rows:auto 1fr;column-gap:clamp(24px,4vw,64px);row-gap:clamp(18px,2.4vw,32px);align-items:start}
+    .team-head{grid-area:head}
+    .team-head .eyebrow{margin-bottom:12px}
+    .team-head .lead{max-width:46ch}
+    .ph-back{grid-area:back;height:clamp(380px,64svh,560px);aspect-ratio:9/16}
+    .singles{grid-area:singles;display:grid;grid-template-columns:1fr 1fr;gap:clamp(10px,1.4vw,18px);max-width:640px}
+    .ph{position:relative;margin:0;overflow:hidden;background:var(--ph-bg);box-shadow:0 0 0 1px var(--hair-soft),0 30px 80px -50px rgba(0,0,0,.8)}
+    .singles .ph{aspect-ratio:4/5}
+    .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+    .singles .ph:nth-child(1) img{object-position:60% 28%}
+    .singles .ph:nth-child(2) img{object-position:53% 28%}
+    .ph-back img{object-position:50% 56%}
+    .ph::after{content:"";position:absolute;inset:auto 0 0 0;height:34%;background:linear-gradient(180deg,transparent,rgba(5,5,5,.78));pointer-events:none}
+    .cap{position:absolute;left:14px;bottom:12px;z-index:1;margin:0;font:500 var(--fs-label)/1 var(--f-sans);letter-spacing:.3em;text-transform:uppercase;color:#F2F5F8}
+
+    /* Kontakt: Kopf, zwei Spalten (Kontaktwege + Yacht | Formularkarte) */
+    .contact-head{text-align:center;margin-bottom:clamp(20px,2.6vw,36px)}
+    .contact-head .eyebrow{justify-content:center}
+    .contact-head .eyebrow::before{display:none}
+    .contact-head .h2{margin-inline:auto}
+    .contact-head .lead{margin-inline:auto}
+    .contact-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,5vw,88px);align-items:start;max-width:1160px;margin-inline:auto}
+    .contact-left{display:flex;flex-direction:column;gap:20px}
+    .c-h{margin:0 0 4px;font:500 var(--fs-h4)/1.2 var(--f-serif);color:var(--text)}
+    .c-sub{margin:0;font-size:var(--fs-body);max-width:38ch}
+    .c-list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+    .c-row{display:flex;align-items:center;gap:14px;width:fit-content;max-width:100%;font-size:var(--fs-body);color:var(--text-2);transition:color .2s;overflow-wrap:anywhere}
+    a.c-row:hover,a.c-row:focus-visible{color:var(--text)}
+    .c-ic{display:grid;place-items:center;width:38px;height:38px;flex:none;border:1px solid var(--hair);border-radius:10px;color:var(--blue-hi);transition:border-color .2s,color .2s}
+    a.c-row:hover .c-ic{border-color:var(--blue-hi);color:var(--text)}
+    .yacht-scene{position:relative;overflow:hidden;margin-top:2px;-webkit-mask-image:linear-gradient(180deg,#000 72%,transparent 100%),linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(180deg,#000 72%,transparent 100%),linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-composite:intersect}
+    .yacht-svg{display:block;width:100%;height:auto;overflow:visible}
+    /* Yacht: bewegt sich von selbst, bleibt an Ort und Stelle */
+    #yBob,#yRoll,#yRefl,.wv,#spray,#wake{transform-box:view-box}
+    #yBob{animation:yBob 4.6s ease-in-out infinite}
+    #spray{transform-origin:600px 225px;animation:spray 1.7s ease-in-out infinite}
+    #wake{transform-origin:70px 240px;animation:spray 1.3s ease-in-out infinite reverse}
+    @keyframes spray{0%,100%{transform:scale(1,.9);opacity:.7}50%{transform:scale(1.04,1.1);opacity:1}}
+    #yRoll{transform-origin:400px 232px;animation:yRoll 5.8s ease-in-out infinite}
+    #yRefl{transform-origin:400px 232px;animation:yRefl 6.6s ease-in-out infinite}
+    .wv{will-change:transform}
+    #wvA{animation:wvA 16s linear infinite}
+    #wvB{animation:wvB 9s linear infinite}
+    #wvC{animation:wvC 6s linear infinite}
+    #foam{animation:foam 5.2s ease-in-out infinite}
+    @keyframes yBob{0%,100%{transform:translateY(1px)}50%{transform:translateY(-5px)}}
+    @keyframes yRoll{0%,100%{transform:rotate(-1.4deg)}50%{transform:rotate(1.1deg)}}
+    @keyframes yRefl{0%,100%{transform:translateY(0) scaleY(1)}50%{transform:translateY(3.6px) scaleY(1.012)}}
+    @keyframes wvA{to{transform:translateX(-240px)}}
+    @keyframes wvB{from{transform:translateX(-180px)}to{transform:translateX(0)}}
+    @keyframes wvC{to{transform:translateX(-140px)}}
+    @keyframes foam{0%,100%{opacity:.55}50%{opacity:.9}}
+    .panel{padding:clamp(20px,2.4vw,32px);border-radius:14px;background:linear-gradient(180deg,var(--card-g1),var(--card-g2));box-shadow:0 0 0 1px var(--hair-soft),0 50px 120px -60px rgba(0,0,0,.8)}
+    .card-head{margin-bottom:12px}
+    .dots{height:12px;margin-bottom:22px;color:rgba(255,255,255,.3);background-image:radial-gradient(circle,currentColor .8px,transparent .8px);background-size:6px 100%;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+    .form{display:grid;gap:22px}
+    .f-row{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .f-field{display:grid;gap:8px;min-width:0}
+    .f-label{font:500 var(--fs-label)/1.4 var(--f-sans);letter-spacing:.24em;text-transform:uppercase;color:var(--text-2)}
+    .f-input{width:100%;padding:9px 0;border:0;border-bottom:1px solid var(--hair);border-radius:0;background:transparent;color:var(--text);font:400 var(--fs-body)/1.5 var(--f-sans);transition:border-color .2s}
+    .f-input::placeholder{color:var(--muted)}
+    .f-input:hover{border-color:var(--chrome)}
+    .f-input:focus{outline:0;border-color:var(--blue-hi)}
+    select.f-input{appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--text-2) 50%),linear-gradient(135deg,var(--text-2) 50%,transparent 50%);background-position:calc(100% - 12px) 55%,calc(100% - 7px) 55%;background-size:5px 5px;background-repeat:no-repeat}
+    select.f-input option{background:var(--bg-2);color:var(--text)}
+    textarea.f-input{resize:none;min-height:0;height:43px;overflow:hidden;display:block}
+    fieldset{border:0;padding:0;margin:0;min-width:0}
+    fieldset>legend{display:block;float:left;width:100%;padding:0;margin:0 0 8px}
+    fieldset>legend+.choice{clear:both}
+    .choice{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:0}
+    .choice label{position:relative;cursor:pointer}
+    .choice input{position:absolute;opacity:0;inset:0}
+    .choice span{display:flex;align-items:center;justify-content:center;padding:13px 12px;border:1px solid var(--hair);font:500 var(--fs-label)/1 var(--f-sans);letter-spacing:.22em;text-transform:uppercase;color:var(--text-2);transition:color .2s,border-color .2s}
+    .choice label:hover span{color:var(--text);border-color:var(--chrome)}
+    .choice input:checked + span{color:var(--text);border-color:var(--blue-hi)}
+    .choice input:focus-visible + span{outline:1px solid var(--blue-hi);outline-offset:3px}
+    .reach{display:none}
+    .reach.show{display:grid;opacity:0;transition:opacity .3s var(--ease)}
+    .reach.show.in{opacity:1}
+    .f-err{font-size:var(--fs-small);line-height:1.4;color:var(--err)}
+    .f-err:empty{display:none}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;padding:16px 32px;border:1px solid var(--chrome);border-radius:2px;background:transparent;color:var(--text);font:500 var(--fs-label)/1 var(--f-sans);letter-spacing:.26em;text-transform:uppercase;cursor:pointer;transition:color .2s,border-color .2s}
+    .btn .btn-ar{width:18px;height:18px;transition:transform .2s var(--ease)}
+    .btn:hover,.btn:focus-visible{color:var(--blue-hi);border-color:var(--blue-hi)}
+    .btn:hover .btn-ar{transform:translateX(4px)}
+    .f-foot{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+    .f-note{margin:0;font-size:var(--fs-small);color:var(--text-2)}
+    .f-status{margin:0;min-height:1.4em;font-size:var(--fs-body);color:var(--text)}
+
+    /* Footer */
+    .footer{padding:36px 0 28px;border-top:1px solid var(--hair-soft)}
+    .foot{display:flex;flex-wrap:wrap;gap:20px 48px;justify-content:space-between;align-items:center}
+    .foot-logo{display:flex;align-items:center;gap:14px;color:var(--text)}
+    .foot-logo img{width:48px}
+    .foot-links{display:flex;flex-wrap:wrap;align-items:center;gap:12px 36px;font-size:var(--fs-body);line-height:24px}
+    .foot-links>*{display:inline-flex;align-items:center;height:24px;line-height:24px}
+    .foot-links a{transition:color .2s}
+    .foot-links a:hover,.foot-links a:focus-visible{color:var(--text)}
+    @media (min-width:900px){.foot{flex-wrap:nowrap}}
+    @media (min-width:560px){.foot-links{flex-wrap:nowrap;white-space:nowrap;gap:12px clamp(18px,3vw,36px)}}
+    @media (max-width:559px){.foot-links{flex-direction:column;align-items:flex-start;gap:6px}}
+    .foot-bottom{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 32px;margin-top:22px;font-size:var(--fs-small);letter-spacing:.08em;color:var(--muted)}
+    .foot-bottom p{margin:0}
+    .foot-legal{display:flex;flex-wrap:wrap;gap:4px 28px}
+    .foot-legal a{padding:6px 0;color:var(--text-2);border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
+    .foot-legal a:hover,.foot-legal a:focus-visible{color:var(--text);border-color:var(--hair)}
+    .foot-legal a:active{color:var(--blue-hi)}
+
+
+    /* ═════════ VORHER / NACHHER ═════════ */
+    /* Regler bewegt sich nur durch den Besucher; einmalige Einführung, wenn der Abschnitt ins Bild kommt */
+    .ba-grid{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(28px,6vw,104px);align-items:center}
+    .ba-copy .lead{max-width:40ch}
+    .ba-legend{display:grid;gap:18px;margin:clamp(24px,3vw,36px) 0 0;padding:0;max-width:40ch}
+    .ba-legend div{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:baseline;padding-top:16px;border-top:1px solid var(--hair-soft)}
+    .ba-legend dt{font:500 var(--fs-label)/1.4 var(--f-sans);letter-spacing:.24em;text-transform:uppercase;color:var(--text-2)}
+    .ba-legend div:last-child dt{color:var(--blue-hi)}
+    .ba-legend dd{margin:0;font-size:var(--fs-body);line-height:1.6;color:var(--text)}
+    .ba{--p:50%;position:relative;height:clamp(440px,78svh,760px);aspect-ratio:9/16;max-width:100%;border-radius:16px;overflow:hidden;background:var(--ph-bg);box-shadow:0 0 0 1px var(--hair-soft),0 30px 80px -50px rgba(0,0,0,.8);touch-action:pan-y;cursor:ew-resize;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}
+    .ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;-webkit-user-drag:none}
+    .ba .ba-after{clip-path:inset(0 0 0 var(--p))}
+    .ba-line{position:absolute;top:0;bottom:0;left:var(--p);width:1px;margin-left:-.5px;background:var(--chrome);box-shadow:0 0 14px rgba(56,160,255,.55);pointer-events:none}
+    .ba-knob{position:absolute;top:50%;left:var(--p);width:52px;height:52px;margin:-26px 0 0 -26px;display:grid;place-items:center;border:1px solid rgba(242,245,248,.5);border-radius:50%;background:rgba(5,8,12,.55);color:#F2F5F8;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);pointer-events:none;transition:border-color .2s var(--ease)}
+    .ba:hover .ba-knob,.ba.drag .ba-knob{border-color:var(--blue-hi)}
+    .ba.drag .ba-knob{opacity:.85}
+    .ba-range{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+    .ba-range:focus-visible ~ .ba-knob{outline:1px solid var(--blue-hi);outline-offset:4px;border-color:var(--blue-hi)}
+    .ba-tag{position:absolute;bottom:14px;z-index:1;padding:8px 12px;border-radius:999px;background:rgba(5,8,12,.55);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);font:500 var(--fs-label)/1 var(--f-sans);letter-spacing:.24em;text-transform:uppercase;color:#F2F5F8;pointer-events:none;transition:opacity .2s var(--ease)}
+    .ba-tag.l{left:14px}.ba-tag.r{right:14px}
+    @media (max-width:860px){.ba-grid{grid-template-columns:1fr}.ba{height:auto;width:100%;max-width:440px;margin-inline:auto}}
+
+    /* Leistungs-Video (Motion Graphic): startet erst, wenn es im Bild ist, läuft einmal, keine Schleife */
+    .reel{padding-block:clamp(28px,4vw,56px) clamp(8px,2vw,24px)}
+    .reel-frame{position:relative;width:100%;max-width:1100px;margin-inline:auto;aspect-ratio:16/9;border-radius:16px;overflow:hidden;background:#05080C;box-shadow:0 0 0 1px var(--hair-soft)}
+    .reel-frame video{width:100%;height:100%;object-fit:cover}
+    .reel-btn{position:absolute;display:grid;place-items:center;border:1px solid rgba(242,245,248,.38);border-radius:50%;background:rgba(5,8,12,.55);color:#F2F5F8;cursor:pointer;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);transition:opacity .25s var(--ease),border-color .2s var(--ease)}
+    .reel-btn:hover{border-color:var(--blue-hi)}
+    .reel-btn:active{opacity:.7}
+    .reel-snd{right:14px;bottom:14px;width:44px;height:44px}
+    .reel-fs{right:66px;bottom:14px;width:44px;height:44px}
+    .reel-frame:fullscreen{border-radius:0;max-width:none;width:100%;height:100%;aspect-ratio:auto;box-shadow:none;background:#000}
+    .reel-frame:fullscreen video{object-fit:contain}
+    .reel-frame:-webkit-full-screen{border-radius:0;max-width:none;width:100%;height:100%;background:#000}
+    .reel-snd .on{display:none}.reel-snd[aria-pressed="true"] .on{display:block}.reel-snd[aria-pressed="true"] .off{display:none}
+    .reel-play{left:50%;top:50%;width:72px;height:72px;margin:-36px 0 0 -36px}
+    .reel-frame.playing .reel-play{opacity:0;pointer-events:none}
+    @media (max-width:560px){.reel-frame{border-radius:12px}.reel-snd{right:8px;bottom:8px;width:34px;height:34px}.reel-fs{right:48px;bottom:8px;width:34px;height:34px}.reel-snd .ic,.reel-fs .ic{width:17px;height:17px}.reel-play{width:56px;height:56px;margin:-28px 0 0 -28px}}
+
+    /* ═════════ HANDY ═════════ */
+    @media (max-width:960px){
+      :root{--nav:66px}
+      .nav-links{display:none}
+      .tools{margin-left:auto;gap:6px}
+      .lang-btn{padding:0 12px}
+      .burger{display:block}
+      .row{grid-template-columns:1fr;gap:10px}
+      .team-grid{grid-template-columns:1fr;grid-template-areas:"head" "back" "singles"}
+      .ph-back{height:auto;aspect-ratio:1/1;width:100%}
+      .singles{max-width:none}
+      .singles .ph{aspect-ratio:3/4}
+      .f-row{grid-template-columns:1fr}
+      .contact-grid{grid-template-columns:1fr}
+    }
+    @media (max-width:560px){
+      .tri{grid-template-columns:1fr}
+      .tri span + span{border-left:0;border-top:1px solid var(--hair)}
+      .tri span{padding:16px 12px}
+      .choice{grid-template-columns:1fr}
+      .btn{width:100%}
+      .pbtn,.sbtn{padding:13px 18px}
+      .medal{width:min(40svh,78vw)}
+    }
+
+    /* ═════════ REDUCED MOTION ═════════ */
+    @media (prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      .fs{animation:none;opacity:1}
+      .js .rv{opacity:1;transform:none;transition:none}
+      #yBob,#yRoll,#yRefl,.wv,#spray,#wake{animation:none!important}
+      .rtrack{animation:none!important}
+      .rcols{height:auto;-webkit-mask-image:none;mask-image:none}
+      .rc[aria-hidden=true]{display:none}
+      .rcol{max-width:none}
+      .m-shine{display:none}
+      *,*::before,*::after{transition-duration:0s!important}
+    }
+  
+    /* Wow-Intro: Logo + Rautenmuster fahren diagonal ins Bild (Wipe von rechts), Glanz läuft einmal über das Emblem */
+    :root{--lat:linear-gradient(180deg,rgba(255,255,255,.2),rgba(255,255,255,.05));--emb-f:brightness(1.12) contrast(1.08);--emb-o:1;--halo:rgba(255,255,255,0)}
+    .hero-halo{position:absolute;left:50%;top:26%;width:min(70vw,100svh);aspect-ratio:1;z-index:-1;border-radius:50%;transform:translate(-50%,-50%);background:radial-gradient(closest-side,var(--halo),transparent 70%);pointer-events:none;animation:haloIn 2.6s var(--ease) both}
+    @keyframes haloIn{from{opacity:0;transform:translate(-50%,-50%) scale(.35)}60%{opacity:1}to{opacity:.9;transform:translate(-50%,-50%) scale(1)}}
+    .hero-lattice{position:absolute;inset:0;z-index:-1;pointer-events:none;-webkit-mask-image:radial-gradient(75% 62% at 50% 34%,#000 0%,transparent 78%);mask-image:radial-gradient(75% 62% at 50% 34%,#000 0%,transparent 78%);animation:wipeIn 2.2s .25s cubic-bezier(.16,.84,.3,1) both}
+    .hero-lattice::before{content:"";position:absolute;inset:0;background:var(--lat);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cpath d='M70 3 137 70 70 137 3 70Z M70 17 123 70 70 123 17 70Z' fill='none' stroke='black' stroke-width='1.1'/%3E%3C/svg%3E") center top/140px 140px;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cpath d='M70 3 137 70 70 137 3 70Z M70 17 123 70 70 123 17 70Z' fill='none' stroke='black' stroke-width='1.1'/%3E%3C/svg%3E") center top/140px 140px}
+    .hero-emblem{position:absolute;left:50%;top:calc(var(--nav) + 3svh);width:var(--lw);aspect-ratio:1100/1051;z-index:-1;transform:translateX(-50%);pointer-events:none;animation:emblemIn 2s .15s cubic-bezier(.16,.84,.3,1) both}
+    .hero-emblem img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+    .hero-emblem::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 42%,rgba(255,255,255,.95) 50%,transparent 58%) 170% 0/300% 100% no-repeat;
+      -webkit-mask:url(brand_assets/prestige_logo_new.png) center/contain no-repeat;mask:url(brand_assets/prestige_logo_new.png) center/contain no-repeat;animation:glint 2.2s 1.5s ease-in-out both}
+    @keyframes wipeIn{from{clip-path:polygon(100% 0,100% 0,100% 100%,100% 100%)}to{clip-path:polygon(-20% 0,100% 0,100% 100%,-45% 100%)}}
+    @keyframes emblemIn{from{opacity:0;filter:blur(14px);clip-path:polygon(100% 0,100% 0,100% 100%,100% 100%);transform:translateX(-50%) scale(1.12)}60%{filter:blur(0)}to{opacity:1;filter:blur(0);clip-path:polygon(-10% -10%,110% -10%,110% 110%,-10% 110%);transform:translateX(-50%) scale(1)}}
+    @keyframes glint{from{background-position:170% 0}to{background-position:-70% 0}}
+    @media (max-height:700px){.hero-pin{--lw:min(36svh,72vw)}.hero-btns .sbtn{display:none}}
+    @media (max-width:720px){.hero-lattice::before{-webkit-mask-size:100px 100px;mask-size:100px 100px}}
+    @media (prefers-reduced-motion:reduce){.hero-halo,.hero-lattice,.hero-emblem,.hero-emblem::after{animation:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main" data-i="0">Zum Inhalt springen</a>
+
+<!-- ═════════ NAVIGATION ═════════ -->
+<header class="nav" id="nav">
+  <div class="nav-prog" id="navProg" aria-hidden="true"></div>
+  <div class="wrap nav-in">
+    <a href="#top" class="brand" aria-label="Prestige Boat Detailing – zum Seitenanfang">
+      <img src="brand_assets/prestige_logo_new_small.png" alt="">
+      <span class="brand-tx">Prestige<span class="bt"> Boat Detailing</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Hauptnavigation" data-ia="73">
+      <a href="#leistungen" data-i="1">Leistungen</a>
+      <a href="#bewertungen" data-i="4">Bewertungen</a>
+      <a href="#team" data-i="3">Über uns</a>
+      <a class="nav-cta" href="#kontakt"><span data-i="5">Kontakt</span> <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10M7 17 17 7"/></svg></a>
+    </nav>
+    <div class="tools">
+      <div class="lang">
+        <button class="lang-btn" id="langBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="langMenu" aria-label="Sprache / Language"><span id="langCur">DE</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="lang-menu" id="langMenu" role="menu">
+          <button type="button" role="menuitem" data-l="de">Deutsch</button>
+          <button type="button" role="menuitem" data-l="en">English</button>
+          <button type="button" role="menuitem" data-l="nl">Nederlands</button>
+        </div>
+      </div>
+    </div>
+    <button class="burger" id="burger" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mnav"><i></i><i></i></button>
+  </div>
+</header>
+
+<div class="mnav" id="mnav" aria-hidden="true" inert>
+  <a class="ml" href="#leistungen" data-i="1">Leistungen</a>
+  <a class="ml" href="#team" data-i="3">Über uns</a>
+  <a class="ml" href="#kontakt" data-i="5">Kontakt</a>
+  <div class="mnav-foot">
+    <a href="tel:+491792112965">+49 179 211 29 65</a>
+    <a href="https://www.instagram.com/prestigeboatdetailing" target="_blank" rel="noopener noreferrer">@prestigeboatdetailing</a>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ═════════ 1 · HERO ═════════ -->
+<section class="hero" id="top" aria-label="Prestige Boat Detailing">
+  <div class="hero-pin" id="heroPin">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-halo" aria-hidden="true"></div>
+    <div class="hero-lattice" aria-hidden="true"></div>
+    <div class="hero-emblem" aria-hidden="true"><img src="brand_assets/prestige_logo_new.png" alt=""></div>
+
+    <div class="hero-copy">
+      <h1 class="hero-line fs" id="heroLine" style="--i:1" data-i="6">Wir bringen Ihr Boot zurück in <em>Bestform.</em></h1>
+      <p class="hero-desc fs" style="--i:2" data-i="7">Mobiler Detailing-Service für Boote und Yachten.</p>
+      <div class="hero-btns fs" style="--i:3">
+        <a class="pbtn" href="#kontakt"><span data-i="8">Aufbereitung sichern</span> <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="sbtn" href="#kontakt"><span data-i="9">Uns kontaktieren</span> <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10M7 17 17 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═════════ LEISTUNGS-VIDEO ═════════ -->
+<section class="reel" id="video" aria-label="Unsere Leistungen im Überblick (Video)">
+  <div class="wrap">
+    <div class="reel-frame" id="reelFrame">
+      <video id="reelVid" muted playsinline preload="metadata" poster="brand_assets/leistungen-motion-16x9-poster.jpg">
+        <source src="brand_assets/leistungen-motion-16x9.mp4" type="video/mp4">
+      </video>
+      <button class="reel-btn reel-play" id="reelPlay" type="button" aria-label="Video abspielen"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg></button>
+      <button class="reel-btn reel-fs" id="reelFs" type="button" aria-label="Vollbild"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5"/></svg></button>
+      <button class="reel-btn reel-snd" id="reelSnd" type="button" aria-pressed="false" aria-label="Ton an / aus"><svg class="ic off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4zM16 9.5l5 5M21 9.5l-5 5"/></svg><svg class="ic on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4zM15.5 9a4.5 4.5 0 0 1 0 6M18 6.5a8 8 0 0 1 0 11"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ 2 · LEISTUNGEN ═════════ -->
+<section class="sec" id="leistungen">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="eyebrow rv" data-i="1">Leistungen</p>
+      <h2 class="h2 rv" style="--d:1" data-i="10">Unsere <em>Leistungen</em></h2>
+    </header>
+
+    <div class="svc">
+      <article class="row sx"><span class="num">01</span><h3 data-i="79">Außenreinigung</h3><div><p data-i="80">Schonende Handwäsche von Rumpf, Aufbau, Deck und Cockpit mit bootsgerechten Reinigern. Wir entfernen jeglichen Schmutz von der Gelcoat-Oberfläche und reinigen gründlich, ohne Material oder Beschläge anzugreifen.</p></div></article>
+      <article class="row sx"><span class="num">02</span><h3 data-i="81">Gelcoat- und Lackaufbereitung</h3><div><p data-i="82">Professionelle, mehrstufige Politur, angepasst an den Zustand Ihrer Oberfläche. Wir entfernen Kratzer, Macken und Oxidation. Das Ergebnis ist ein gleichmäßiger, tiefer Glanz mit klarer Spiegelung.</p></div></article>
+      <article class="row sx"><span class="num">03</span><h3 data-i="83">Keramikversiegelung</h3><div><p data-i="84">Langlebiger Schutz für Gelcoat und Lack nach der Politur. Die Keramikschicht schützt vor UV-Strahlung und Oxidation, sorgt für Abperleffekt und intensiven Glanz und macht die Reinigung deutlich leichter.</p></div></article>
+      <article class="row sx"><span class="num">04</span><h3 data-i="85">Innendetailing</h3><div><p data-i="86">Gründliche Reinigung und Pflege des gesamten Innenraums: Edelstahl und Reling, Teakholz, Kunststoff, Leder und Polster, Textilien und Teppiche, Glasflächen sowie Sanitär- und Pantrybereich. Jedes Material wird passend behandelt.</p></div></article>
+      <article class="row sx"><span class="num">05</span><h3 data-i="87">Antifouling</h3><div><p data-i="88">Schutz des Unterwasserschiffs vor Algen, Muscheln und Seepocken. Wir reinigen den Rumpf, bereiten den Untergrund vor und tragen das Antifouling fachgerecht auf, abgestimmt auf Gewässer und Nutzung.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ VORHER / NACHHER ═════════ -->
+<section class="sec ba-sec" id="vorher-nachher" aria-labelledby="baH">
+  <div class="wrap">
+    <div class="ba-grid">
+      <header class="ba-copy">
+        <p class="eyebrow rv" data-i="89">Vorher / Nachher</p>
+        <h2 class="h2 rv" style="--d:1" id="baH" data-i="90">Der Unterschied, <em>sichtbar.</em></h2>
+        <p class="lead rv" style="--d:2" data-i="91">Derselbe Rumpf aus derselben Perspektive. Ziehen Sie den Regler und vergleichen Sie den Zustand vor und nach unserer Aufbereitung.</p>
+        <dl class="ba-legend rv" style="--d:3">
+          <div><dt data-i="92">Vorher</dt><dd data-i="94">Stumpfer Rumpf, Wasserflecken und Ablagerungen.</dd></div>
+          <div><dt data-i="93">Nachher</dt><dd data-i="95">Gereinigt und wieder auf Hochglanz gebracht.</dd></div>
+        </dl>
+      </header>
+      <div class="ba rv" style="--d:1" id="ba">
+        <img src="brand_assets/slider/vorher-1080.jpg" srcset="brand_assets/slider/vorher-1080.jpg 1080w, brand_assets/slider/vorher.jpg 2160w" sizes="(max-width:860px) 92vw, 440px" width="1080" height="1920" loading="lazy" decoding="async" alt="Schwarzer Bootsrumpf mit Schriftzug MS Stella III vor der Aufbereitung: stumpf, mit Wasserflecken und Ablagerungen">
+        <img class="ba-after" src="brand_assets/slider/nachher-1080.jpg" srcset="brand_assets/slider/nachher-1080.jpg 1080w, brand_assets/slider/nachher.jpg 2160w" sizes="(max-width:860px) 92vw, 440px" width="1080" height="1920" loading="lazy" decoding="async" alt="Derselbe Rumpf nach der Aufbereitung: tiefschwarz glänzend, das Pflaster spiegelt sich im Lack">
+        <span class="ba-tag l" data-i="92">Vorher</span><span class="ba-tag r" data-i="93">Nachher</span>
+        <div class="ba-line" aria-hidden="true"></div>
+        <input class="ba-range" id="baRange" type="range" min="0" max="100" step="1" value="50" aria-label="Vorher-Nachher-Vergleich" data-ia="96">
+        <div class="ba-knob" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ BEWERTUNGEN ═════════ -->
+<section class="sec reviews" id="bewertungen" aria-labelledby="revH">
+  <div class="wrap">
+    <header class="sec-head rhead">
+      <p class="eyebrow" data-i="4">Bewertungen</p>
+      <h2 class="h2" id="revH" data-i="44">Das sagen <em>Kunden.</em></h2>
+      <p class="lead" data-i="45">Echte Google-Bewertungen, 5 von 5 Sternen.</p>
+    </header>
+    <div class="rcols"><div class="rcol " style="--dur:46s"><div class="rtrack"><figure class="rc"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Ich habe mein Boot bei den Jungs zum polieren und versiegeln abgegeben. Das Gelcoat war nachher wieder am glänzen als wäre es neu, genauso der Außenborder. Außerdem arbeiten die Jungs mit Leidenschaft und der Preis war sehr fair.</blockquote><figcaption><span class="av">JN</span><span><b>Jan-Niclas Völker</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure><figure class="rc"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Mein Boot war ziemlich verwittert, jetzt glänzt es wieder richtig. Auch kleine Details wurden nicht übersehen</blockquote><figcaption><span class="av">DL</span><span><b>Daniel Laukart</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure><figure class="rc"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Klare Empfehlung! Termin kurzfristig bekommen und das Ergebnis hat meine Erwartungen übertroffen.</blockquote><figcaption><span class="av">MG</span><span><b>Michael Gawrilow</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure><figure class="rc"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Ich habe mein Boot den Jungs anvertraut. Das GFK und die Außenborder waren komplett verwittert und wurden auf Hochglanz …</blockquote><figcaption><span class="av">AK</span><span><b>Abdullah Karagöz</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure><figure class="rc"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Top zufrieden - hätte das selbst nie so hinbekommen. Boot sieht aus wie neu!</blockquote><figcaption><span class="av">AD</span><span><b>Alexander Dahlke</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure><figure class="rc" aria-hidden="true"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Ich habe mein Boot bei den Jungs zum polieren und versiegeln abgegeben. Das Gelcoat war nachher wieder am glänzen als wäre es neu, genauso der Außenborder. Außerdem arbeiten die Jungs mit Leidenschaft und der Preis war sehr fair.</blockquote><figcaption><span class="av">JN</span><span><b>Jan-Niclas Völker</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure><figure class="rc" aria-hidden="true"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Mein Boot war ziemlich verwittert, jetzt glänzt es wieder richtig. Auch kleine Details wurden nicht übersehen</blockquote><figcaption><span class="av">DL</span><span><b>Daniel Laukart</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure><figure class="rc" aria-hidden="true"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Klare Empfehlung! Termin kurzfristig bekommen und das Ergebnis hat meine Erwartungen übertroffen.</blockquote><figcaption><span class="av">MG</span><span><b>Michael Gawrilow</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure><figure class="rc" aria-hidden="true"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Ich habe mein Boot den Jungs anvertraut. Das GFK und die Außenborder waren komplett verwittert und wurden auf Hochglanz …</blockquote><figcaption><span class="av">AK</span><span><b>Abdullah Karagöz</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure><figure class="rc" aria-hidden="true"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Top zufrieden - hätte das selbst nie so hinbekommen. Boot sieht aus wie neu!</blockquote><figcaption><span class="av">AD</span><span><b>Alexander Dahlke</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure></div></div><div class="rcol r2" style="--dur:56s"><div class="rtrack"><figure class="rc"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Klare Empfehlung! Termin kurzfristig bekommen und das Ergebnis hat meine Erwartungen übertroffen.</blockquote><figcaption><span class="av">MG</span><span><b>Michael Gawrilow</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure><figure class="rc"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Ich habe mein Boot den Jungs anvertraut. Das GFK und die Außenborder waren komplett verwittert und wurden auf Hochglanz …</blockquote><figcaption><span class="av">AK</span><span><b>Abdullah Karagöz</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure><figure class="rc"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Top zufrieden - hätte das selbst nie so hinbekommen. Boot sieht aus wie neu!</blockquote><figcaption><span class="av">AD</span><span><b>Alexander Dahlke</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure><figure class="rc"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Ich habe mein Boot bei den Jungs zum polieren und versiegeln abgegeben. Das Gelcoat war nachher wieder am glänzen als wäre es neu, genauso der Außenborder. Außerdem arbeiten die Jungs mit Leidenschaft und der Preis war sehr fair.</blockquote><figcaption><span class="av">JN</span><span><b>Jan-Niclas Völker</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure><figure class="rc"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Mein Boot war ziemlich verwittert, jetzt glänzt es wieder richtig. Auch kleine Details wurden nicht übersehen</blockquote><figcaption><span class="av">DL</span><span><b>Daniel Laukart</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure><figure class="rc" aria-hidden="true"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Klare Empfehlung! Termin kurzfristig bekommen und das Ergebnis hat meine Erwartungen übertroffen.</blockquote><figcaption><span class="av">MG</span><span><b>Michael Gawrilow</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure><figure class="rc" aria-hidden="true"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Ich habe mein Boot den Jungs anvertraut. Das GFK und die Außenborder waren komplett verwittert und wurden auf Hochglanz …</blockquote><figcaption><span class="av">AK</span><span><b>Abdullah Karagöz</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure><figure class="rc" aria-hidden="true"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Top zufrieden - hätte das selbst nie so hinbekommen. Boot sieht aus wie neu!</blockquote><figcaption><span class="av">AD</span><span><b>Alexander Dahlke</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure><figure class="rc" aria-hidden="true"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Ich habe mein Boot bei den Jungs zum polieren und versiegeln abgegeben. Das Gelcoat war nachher wieder am glänzen als wäre es neu, genauso der Außenborder. Außerdem arbeiten die Jungs mit Leidenschaft und der Preis war sehr fair.</blockquote><figcaption><span class="av">JN</span><span><b>Jan-Niclas Völker</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure><figure class="rc" aria-hidden="true"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Mein Boot war ziemlich verwittert, jetzt glänzt es wieder richtig. Auch kleine Details wurden nicht übersehen</blockquote><figcaption><span class="av">DL</span><span><b>Daniel Laukart</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure></div></div><div class="rcol r3" style="--dur:50s"><div class="rtrack"><figure class="rc"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Top zufrieden - hätte das selbst nie so hinbekommen. Boot sieht aus wie neu!</blockquote><figcaption><span class="av">AD</span><span><b>Alexander Dahlke</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure><figure class="rc"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Ich habe mein Boot bei den Jungs zum polieren und versiegeln abgegeben. Das Gelcoat war nachher wieder am glänzen als wäre es neu, genauso der Außenborder. Außerdem arbeiten die Jungs mit Leidenschaft und der Preis war sehr fair.</blockquote><figcaption><span class="av">JN</span><span><b>Jan-Niclas Völker</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure><figure class="rc"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Mein Boot war ziemlich verwittert, jetzt glänzt es wieder richtig. Auch kleine Details wurden nicht übersehen</blockquote><figcaption><span class="av">DL</span><span><b>Daniel Laukart</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure><figure class="rc"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Klare Empfehlung! Termin kurzfristig bekommen und das Ergebnis hat meine Erwartungen übertroffen.</blockquote><figcaption><span class="av">MG</span><span><b>Michael Gawrilow</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure><figure class="rc"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Ich habe mein Boot den Jungs anvertraut. Das GFK und die Außenborder waren komplett verwittert und wurden auf Hochglanz …</blockquote><figcaption><span class="av">AK</span><span><b>Abdullah Karagöz</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure><figure class="rc" aria-hidden="true"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Top zufrieden - hätte das selbst nie so hinbekommen. Boot sieht aus wie neu!</blockquote><figcaption><span class="av">AD</span><span><b>Alexander Dahlke</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure><figure class="rc" aria-hidden="true"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Ich habe mein Boot bei den Jungs zum polieren und versiegeln abgegeben. Das Gelcoat war nachher wieder am glänzen als wäre es neu, genauso der Außenborder. Außerdem arbeiten die Jungs mit Leidenschaft und der Preis war sehr fair.</blockquote><figcaption><span class="av">JN</span><span><b>Jan-Niclas Völker</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure><figure class="rc" aria-hidden="true"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Mein Boot war ziemlich verwittert, jetzt glänzt es wieder richtig. Auch kleine Details wurden nicht übersehen</blockquote><figcaption><span class="av">DL</span><span><b>Daniel Laukart</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure><figure class="rc" aria-hidden="true"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Klare Empfehlung! Termin kurzfristig bekommen und das Ergebnis hat meine Erwartungen übertroffen.</blockquote><figcaption><span class="av">MG</span><span><b>Michael Gawrilow</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure><figure class="rc" aria-hidden="true"><div class="stars" aria-label="5 von 5 Sternen" data-ia="74">★★★★★</div><blockquote>Ich habe mein Boot den Jungs anvertraut. Das GFK und die Außenborder waren komplett verwittert und wurden auf Hochglanz …</blockquote><figcaption><span class="av">AK</span><span><b>Abdullah Karagöz</b><small data-i="46">Google-Bewertung</small></span></figcaption></figure></div></div></div>
+  </div>
+</section>
+
+<!-- ═════════ 5 · DAS SIND WIR ═════════ -->
+<section class="team" id="team" aria-labelledby="teamH">
+  <div class="wrap">
+    <div class="team-grid">
+      <header class="team-head">
+        <p class="eyebrow" data-i="3">Über uns</p>
+        <h2 class="h2" id="teamH" data-i="47">Das sind <em>wir.</em></h2>
+        <p class="lead" data-i="48">Hinter Prestige stehen wir beide. Wir betreuen jedes Boot persönlich – von der ersten Beratung bis zum Finish.</p>
+      </header>
+      <figure class="ph ph-back"><img src="brand_assets/Prestige%20Back%20Oli%20%26%20Aleks.jpeg" alt="Oli und Aleks von hinten in Prestige-Hoodies mit Logo, vor dem Hafenhaus bei Mondschein" loading="lazy"></figure>
+      <div class="singles">
+        <figure class="ph"><img src="brand_assets/team-oli.jpg" alt="Oli im Prestige-Hoodie am Hafen bei Sonnenuntergang" loading="lazy"><figcaption class="cap">Oli</figcaption></figure>
+        <figure class="ph"><img src="brand_assets/team-aleks.jpg" alt="Aleks im Prestige-Hoodie am Hafen bei Sonnenuntergang" loading="lazy"><figcaption class="cap">Aleks</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ 6 · KONTAKT ═════════ -->
+<section class="sec" id="kontakt">
+  <div class="wrap">
+    <header class="contact-head">
+      <p class="eyebrow" data-i="5">Kontakt</p>
+      <h2 class="h2" data-i="49">Jetzt Termin <em>anfragen</em></h2>
+      <p class="lead" data-i="50">Wir melden uns persönlich bei Ihnen – unverbindlich und diskret.</p>
+    </header>
+
+    <div class="contact-grid">
+      <div class="contact-left">
+        <div>
+          <h3 class="c-h" data-i="51">Direkt erreichbar</h3>
+          <p class="c-sub" data-i="52">Rufen Sie an, schreiben Sie uns oder nutzen Sie das Formular.</p>
+        </div>
+        <ul class="c-list">
+          <li><a class="c-row" href="tel:+491792112965"><span class="c-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>+49 179 211 29 65</a></li>
+          <li><a class="c-row" href="mailto:boatdetailing.prestige@gmail.com"><span class="c-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg></span>boatdetailing.prestige@gmail.com</a></li>
+          <li><a class="c-row" href="https://www.instagram.com/prestigeboatdetailing" target="_blank" rel="noopener noreferrer"><span class="c-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17 7h.01"/></svg></span>@prestigeboatdetailing</a></li>
+          <li><span class="c-row"><span class="c-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg></span><span data-i="43">Köln und Umkreis</span></span></li>
+        </ul>
+
+        <!-- Yacht: schaukelt von selbst an Ort und Stelle -->
+        <div class="yacht-scene" id="yachtScene" aria-hidden="true">
+          <svg class="yacht-svg" viewBox="0 26 800 304" role="img" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="hullG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FBFCFD"/><stop offset=".5" stop-color="#DCE3EA"/><stop offset="1" stop-color="#A4B2C0"/></linearGradient>
+    <linearGradient id="deckG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C3CDD8"/></linearGradient>
+    <linearGradient id="bootG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0F3A66"/><stop offset="1" stop-color="#07111B"/></linearGradient>
+    <linearGradient id="glassG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A1521"/><stop offset=".5" stop-color="#17508A"/><stop offset="1" stop-color="#0A1825"/></linearGradient>
+    <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#050505" stop-opacity=".38"/><stop offset="1" stop-color="#050505" stop-opacity="0"/></linearGradient>
+    <linearGradient id="seaG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1E8EF0" stop-opacity=".55"/><stop offset=".6" stop-color="#0B3B72" stop-opacity=".75"/><stop offset="1" style="stop-color:var(--sea-deep)" stop-opacity=".9"/></linearGradient>
+    <linearGradient id="seaG2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3FA3FF" stop-opacity=".7"/><stop offset=".5" stop-color="#0D4A8F" stop-opacity=".85"/><stop offset="1" style="stop-color:var(--sea-deep)" stop-opacity=".95"/></linearGradient>
+    <linearGradient id="sprayG" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#CFE6F7" stop-opacity=".55"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="1"/></linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#0A88F5" stop-opacity="0"/><stop offset="1" stop-color="#0A88F5" stop-opacity="0"/></radialGradient>
+    <linearGradient id="reflFade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <mask id="reflMask" maskUnits="userSpaceOnUse" x="0" y="232" width="800" height="98"><rect x="0" y="232" width="800" height="98" fill="url(#reflFade)"/></mask>
+    <clipPath id="hullClip"><path d="M62 190 L560 186 L772 172 C752 200 728 222 700 232 L96 232 C76 220 66 206 62 190 Z"/></clipPath>
+    <filter id="soft" x="-5%" y="-50%" width="110%" height="200%"><feGaussianBlur stdDeviation="2.2"/></filter>
+    <filter id="blur1" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation="1.1"/></filter>
+
+    <g id="yachtShape">
+      <!-- Badeplattform -->
+      <path d="M50 224 L108 224 L112 232 L46 232 Z" fill="#6E7C8B"/>
+      <path d="M50 224 L108 224" stroke="#C9D1D9" stroke-width="1.1" opacity=".8"/>
+      <!-- Rumpf (dunkel, gestreckt, scharfer Bug) -->
+      <path d="M62 190 L560 186 L772 172 C752 200 728 222 700 232 L96 232 C76 220 66 206 62 190 Z" fill="url(#bootG)"/>
+      <g clip-path="url(#hullClip)">
+        <path d="M40 212 L560 207 L790 190" fill="none" stroke="#0A88F5" stroke-width="3"/>
+        <path d="M40 218 L560 213 L790 196" fill="none" stroke="#A9D2FF" stroke-width=".8" opacity=".6"/>
+        <path d="M60 192 L560 188 L772 174 L772 182 L560 196 L60 200 Z" fill="#fff" opacity=".07"/>
+        <g fill="#0A1521" stroke="#C9D1D9" stroke-width=".8" stroke-opacity=".75"><rect x="372" y="201" width="20" height="7" rx="3.5"/><rect x="408" y="201" width="20" height="7" rx="3.5"/><rect x="444" y="201" width="20" height="7" rx="3.5"/><rect x="480" y="201" width="20" height="7" rx="3.5"/><rect x="516" y="201" width="20" height="7" rx="3.5"/><rect x="552" y="201" width="20" height="7" rx="3.5"/><rect x="588" y="201" width="20" height="7" rx="3.5"/></g>
+        <g fill="#0A1521" stroke="#C9D1D9" stroke-width=".8" stroke-opacity=".75"><ellipse cx="150" cy="204" rx="11" ry="6"/><ellipse cx="190" cy="204" rx="11" ry="6"/><ellipse cx="230" cy="203.5" rx="11" ry="6"/><ellipse cx="270" cy="203" rx="11" ry="6"/></g>
+        <rect x="662" y="199" width="22" height="22" rx="2" fill="#E8EDF2" opacity=".9"/><rect x="666" y="203" width="14" height="14" rx="1" fill="#0A1521"/>
+        <path d="M90 214 L700 206" stroke="#fff" stroke-opacity=".12" stroke-width="6" filter="url(#soft)" fill="none"/>
+      </g>
+      <path d="M62 190.5 L560 186.5 L772 172.5" fill="none" stroke="#F4F7FA" stroke-width="1.6"/>
+      <path d="M62 194 L560 190 L760 177" fill="none" stroke="#C9D1D9" stroke-width=".7" opacity=".6"/>
+      <!-- Deck 1 -->
+      <path d="M100 187 L110 168 C116 160 130 158 152 157 L470 152 C524 150 562 162 600 186 Z" fill="url(#deckG)"/>
+      <path d="M132 180 L146 167 L474 162 C520 162 552 171 582 186 L132 186 Z" fill="url(#glassG)"/>
+      <g stroke="#DCE4EB" stroke-width="1.5"><path d="M200 166 L194 186"/><path d="M270 165 L266 186"/><path d="M340 164 L338 186"/><path d="M410 162 L410 186"/><path d="M480 163 L486 186"/></g>
+      <path d="M100 187 L600 186" stroke="#9AA9B8" stroke-width="1" opacity=".7"/>
+      <!-- Deck 2 -->
+      <path d="M150 157 L162 138 C170 131 186 130 206 129 L432 126 C470 126 500 135 528 156 Z" fill="url(#deckG)"/>
+      <path d="M178 151 L190 140 L428 137 C454 138 476 144 498 155 L178 155 Z" fill="url(#glassG)"/>
+      <g stroke="#DCE4EB" stroke-width="1.4"><path d="M240 139 L236 155"/><path d="M310 138 L308 155"/><path d="M380 137 L380 155"/><path d="M446 140 L452 155"/></g>
+      <path d="M146 158 L532 156" stroke="#9AA9B8" stroke-width=".9" opacity=".6"/>
+      <!-- Deck 3 -->
+      <path d="M212 129 L224 112 C230 106 244 105 260 104 L382 102 C410 102 432 108 454 128 Z" fill="url(#deckG)"/>
+      <path d="M240 123 L250 114 L378 111 C396 112 412 116 428 124 L240 124 Z" fill="url(#glassG)"/>
+      <g stroke="#DCE4EB" stroke-width="1.3"><path d="M300 113 L298 124"/><path d="M350 112 L350 124"/></g>
+      <!-- Dachplatte mit Überstand -->
+      <path d="M230 106 C238 100 250 99 264 98 L390 96 C410 96 424 100 438 110 L426 110 C414 104 404 102 390 103 L266 105 C254 106 246 108 240 112 Z" fill="#F4F7FA"/>
+      <path d="M230 106 C238 100 250 99 264 98 L390 96 C410 96 424 100 438 110" fill="none" stroke="#fff" stroke-width="1"/>
+      <!-- Mast, Radar -->
+      <path d="M294 100 L297 60 L303 60 L306 100 Z" fill="#E8EDF2" stroke="#8D9BAA" stroke-width=".7"/>
+      <path d="M268 84 H336" stroke="#DCE3EA" stroke-width="2.2" stroke-linecap="round"/>
+      <circle cx="276" cy="77" r="8" fill="#F2F5F8" stroke="#8D9BAA" stroke-width=".8"/><circle cx="328" cy="77" r="8" fill="#F2F5F8" stroke="#8D9BAA" stroke-width=".8"/>
+      <path d="M282 66 H318 M288 61 H312" stroke="#DCE3EA" stroke-width="1.3" stroke-linecap="round"/>
+      <path d="M300 60 L300 36 M318 60 L330 42" stroke="#B5C1CD" stroke-width=".9" stroke-linecap="round"/>
+      <circle cx="300" cy="35" r="1.8" fill="#38A0FF"/>
+      <!-- Vorschiff -->
+      <path d="M600 186 L772 174 L770 177 L600 190 Z" fill="#E8EDF2" opacity=".9"/>
+      <path d="M624 183 L640 176 L660 175 L672 181" fill="none" stroke="#C9D1D9" stroke-width="1.1" stroke-linejoin="round"/>
+    </g>
+  </defs>
+
+  <ellipse cx="400" cy="244" rx="380" ry="46" fill="url(#glow)"/>
+
+  <!-- Wasser hinten -->
+  <g class="wv" id="wvA"><path d="M0 230 Q 30 221 60 230 T 120 230 T 180 230 T 240 230 T 300 230 T 360 230 T 420 230 T 480 230 T 540 230 T 600 230 T 660 230 T 720 230 T 780 230 T 840 230 T 900 230 T 960 230 T 1020 230 T 1080 230 T 1140 230 L 1140 330 L 0 330 Z" fill="url(#seaG)" opacity=".7"/><path d="M0 230 Q 30 221 60 230 T 120 230 T 180 230 T 240 230 T 300 230 T 360 230 T 420 230 T 480 230 T 540 230 T 600 230 T 660 230 T 720 230 T 780 230 T 840 230 T 900 230 T 960 230 T 1020 230 T 1080 230 T 1140 230" fill="none" stroke="#7CC0FF" stroke-opacity="0.5" stroke-width="1"/></g>
+
+  <!-- Spiegelung -->
+  <g mask="url(#reflMask)"><g id="yRefl"><g transform="translate(0 464) scale(1 -1)" filter="url(#blur1)" opacity=".8"><use href="#yachtShape" transform="rotate(-2 400 225)"/></g></g></g>
+
+  <!-- Yacht -->
+  <g id="yBob">
+    <g id="yRoll"><use href="#yachtShape" transform="rotate(-2 400 225)"/></g>
+    <!-- Gischt am Bug, Heckwelle -->
+    <g id="spray" fill="url(#sprayG)">
+      <path d="M660 236 C700 226 742 214 790 204 C764 220 738 232 706 240 Z" opacity=".85"/>
+      <path d="M690 232 C720 224 748 216 776 212 C756 222 734 230 712 236 Z" opacity=".7"/>
+      <g fill="#EAF3FA" opacity=".8"><circle cx="764" cy="206" r="2"/><circle cx="778" cy="214" r="1.5"/><circle cx="752" cy="200" r="1.3"/></g>
+    </g>
+    <g id="wake" fill="url(#sprayG)">
+      <path d="M98 240 C76 232 56 228 30 228 C48 238 70 246 96 250 Z" opacity=".7"/>
+      <path d="M70 248 C40 248 16 252 -10 258 C20 258 48 255 76 253 Z" opacity=".5"/>
+    
+  </g>
+
+  <!-- Wasser vorn -->
+  <g class="wv" id="wvB"><path d="M0 240 Q 22.5 228 45 240 T 90 240 T 135 240 T 180 240 T 225 240 T 270 240 T 315 240 T 360 240 T 405 240 T 450 240 T 495 240 T 540 240 T 585 240 T 630 240 T 675 240 T 720 240 T 765 240 T 810 240 T 855 240 T 900 240 T 945 240 T 990 240 T 1035 240 T 1080 240 T 1125 240 L 1125 330 L 0 330 Z" fill="url(#seaG2)" opacity=".9"/><path d="M0 240 Q 22.5 228 45 240 T 90 240 T 135 240 T 180 240 T 225 240 T 270 240 T 315 240 T 360 240 T 405 240 T 450 240 T 495 240 T 540 240 T 585 240 T 630 240 T 675 240 T 720 240 T 765 240 T 810 240 T 855 240 T 900 240 T 945 240 T 990 240 T 1035 240 T 1080 240 T 1125 240" fill="none" stroke="#CFE6F7" stroke-opacity="0.75" stroke-width="1.4"/></g>
+  <g class="wv" id="wvC"><path d="M0 254 Q 17.5 244 35 254 T 70 254 T 105 254 T 140 254 T 175 254 T 210 254 T 245 254 T 280 254 T 315 254 T 350 254 T 385 254 T 420 254 T 455 254 T 490 254 T 525 254 T 560 254 T 595 254 T 630 254 T 665 254 T 700 254 T 735 254 T 770 254 T 805 254 T 840 254 T 875 254 T 910 254 T 945 254 T 980 254 T 1015 254 T 1050 254 T 1085 254 T 1120 254 L 1120 330 L 0 330 Z" fill="url(#seaG2)" opacity=".95"/><path d="M0 254 Q 17.5 244 35 254 T 70 254 T 105 254 T 140 254 T 175 254 T 210 254 T 245 254 T 280 254 T 315 254 T 350 254 T 385 254 T 420 254 T 455 254 T 490 254 T 525 254 T 560 254 T 595 254 T 630 254 T 665 254 T 700 254 T 735 254 T 770 254 T 805 254 T 840 254 T 875 254 T 910 254 T 945 254 T 980 254 T 1015 254 T 1050 254 T 1085 254 T 1120 254" fill="none" stroke="#CFE6F7" stroke-opacity="0.4" stroke-width="1.1"/></g>
+</svg>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="card-head">
+          <h3 class="c-h" data-i="53">Anfrage senden</h3>
+          <p class="c-sub" data-i="54">Füllen Sie das Formular aus, wir melden uns persönlich bei Ihnen.</p>
+        </div>
+        <div class="dots" aria-hidden="true"></div>
+        <form class="form" id="form" novalidate>
+        <div class="f-field">
+          <label class="f-label" for="f-name" data-i="55">Name *</label>
+          <input class="f-input" id="f-name" name="name" type="text" autocomplete="name" aria-describedby="err-name">
+          <span class="f-err" id="err-name" role="alert"></span>
+        </div>
+        <div class="f-field">
+          <label class="f-label" for="f-ort" data-i="64">Standort / Liegeplatz</label>
+          <input class="f-input" id="f-ort" name="ort" type="text" placeholder="z. B. Yachthafen Roermond" data-ip="71" autocomplete="off">
+        </div>
+        <div class="f-field">
+          <label class="f-label" for="f-msg" data-i="65">Nachricht</label>
+          <textarea class="f-input" id="f-msg" name="nachricht" rows="1" placeholder="Bootslänge, gewünschte Leistung …" data-ip="72"></textarea>
+        </div>
+
+        <fieldset>
+          <legend class="f-label" data-i="66">Wie sollen wir Sie erreichen? *</legend>
+          <div class="choice">
+            <label><input type="radio" name="kanal" value="E-Mail"><span data-i="67">E-Mail</span></label>
+            <label><input type="radio" name="kanal" value="WhatsApp"><span>WhatsApp</span></label>
+          </div>
+          <span class="f-err" id="err-kanal" role="alert"></span>
+        </fieldset>
+
+        <div class="f-field reach" id="reach-mail">
+          <label class="f-label" for="f-mail" data-i="68">Ihre E-Mail-Adresse *</label>
+          <input class="f-input" id="f-mail" name="mail" type="email" autocomplete="email" aria-describedby="err-mail">
+          <span class="f-err" id="err-mail" role="alert"></span>
+        </div>
+        <div class="f-field reach" id="reach-wa">
+          <label class="f-label" for="f-wa" data-i="69">Ihre WhatsApp-Nummer *</label>
+          <input class="f-input" id="f-wa" name="wa" type="tel" autocomplete="tel" placeholder="+49 …" aria-describedby="err-wa">
+          <span class="f-err" id="err-wa" role="alert"></span>
+        </div>
+
+        <div class="f-foot">
+          <button class="btn" type="submit"><span data-i="53">Anfrage senden</span> <svg class="ic btn-ar" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <p class="f-note" data-i="75">Öffnet Ihr E-Mail-Programm mit einer vorausgefüllten Nachricht.</p>
+          <p class="f-status" id="fStatus" role="status"></p>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot">
+      <div class="foot-logo">
+        <img src="brand_assets/prestige_logo_new_small.png" alt="">
+        <span class="label" style="color:var(--text)">Prestige Boat Detailing</span>
+      </div>
+      <div class="foot-links">
+        <a href="tel:+491792112965">+49 179 211 29 65</a>
+        <a href="https://www.instagram.com/prestigeboatdetailing" target="_blank" rel="noopener noreferrer">@prestigeboatdetailing</a>
+        <span data-i="43">Köln und Umkreis</span>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© <span id="year">2026</span> Prestige Boat Detailing</p>
+      <nav class="foot-legal" aria-label="Rechtliches" data-ia="78">
+        <a href="impressum.html" data-i="76">Impressum</a>
+        <a href="datenschutz.html" data-i="77">Datenschutz</a>
+      </nav>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+(() => {
+  const $ = s => document.querySelector(s);
+  const $$ = s => [...document.querySelectorAll(s)];
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
+
+  /* ── Einblenden: einmal, wenn ein Element ins Bild kommt ── */
+  const io = new IntersectionObserver((es, o) => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); o.unobserve(e.target); }
+  }), { threshold: .2 });
+  $$('.rv').forEach(el => reduce ? el.classList.add('in') : io.observe(el));
+
+  /* ── Vorher/Nachher-Regler: Ziehen, Tippen oder Pfeiltasten.
+        Einmalige, ruhige Einführung, wenn der Abschnitt ins Bild kommt (bei reduzierter Bewegung aus). ── */
+  (() => {
+    const ba = $('#ba'); if (!ba) return;
+    const r = $('#baRange'), tl = ba.querySelector('.ba-tag.l'), tr = ba.querySelector('.ba-tag.r');
+    let touched = false, raf = 0, down = false, moved = false;
+    const set = v => {
+      v = clamp(v, 0, 100);
+      ba.style.setProperty('--p', v + '%'); r.value = Math.round(v);
+      tl.style.opacity = v < 16 ? 0 : 1; tr.style.opacity = v > 84 ? 0 : 1;
+    };
+    const fromX = x => { const b = ba.getBoundingClientRect(); return (x - b.left) / b.width * 100; };
+    const take = () => { touched = true; cancelAnimationFrame(raf); };
+    ba.addEventListener('pointerdown', e => {
+      take(); down = true; moved = false; ba.classList.add('drag');
+      if (e.pointerType === 'mouse') { set(fromX(e.clientX)); try { ba.setPointerCapture(e.pointerId); } catch (_) {} }
+    });
+    ba.addEventListener('pointermove', e => { if (down) { moved = true; set(fromX(e.clientX)); } });
+    ba.addEventListener('pointerup', e => { if (down && !moved) set(fromX(e.clientX)); down = false; ba.classList.remove('drag'); });
+    ba.addEventListener('pointercancel', () => { down = false; ba.classList.remove('drag'); });
+    r.addEventListener('input', () => { take(); set(+r.value); });
+    if (reduce) { set(50); return; }
+    set(86);
+    new IntersectionObserver((es, o) => es.forEach(e => {
+      if (!e.isIntersecting) return; o.disconnect(); if (touched) return;
+      const t0 = performance.now(), D = 1700, from = 86, to = 50;
+      const step = n => {
+        if (touched) return;
+        const k = clamp((n - t0) / D), ez = 1 - Math.pow(1 - k, 3);
+        set(from + (to - from) * ez);
+        if (k < 1) raf = requestAnimationFrame(step);
+      };
+      raf = requestAnimationFrame(step);
+    }), { threshold: .55 }).observe(ba);
+  })();
+
+  /* ── Scroll-Szenen (alles hängt nur an der Scrollposition) ── */
+  
+  const navProg = $('#navProg');
+  const rows = $$('.sx'), tracks = $$('.mq-track');
+  let ticking = false;
+
+  function update() {
+    ticking = false;
+    const sy = scrollY, vh = innerHeight;
+
+    navProg.style.transform = `scaleX(${clamp(sy / (document.documentElement.scrollHeight - vh)).toFixed(4)})`;
+
+    /* Leistungen: Zeilen kippen in Perspektive und leuchten in der Bildmitte */
+    for (const el of rows) {
+      const r = el.getBoundingClientRect();
+      if (r.bottom < -80 || r.top > vh + 80) continue;
+      const d = clamp(((r.top + r.height / 2) - vh * .52) / (vh * .5), -1, 1);
+      const t = 1 - Math.abs(d);
+      el.style.opacity = (.25 + .75 * clamp(t * 1.5)).toFixed(3);
+      el.style.transform = `rotateX(${(d * 16).toFixed(2)}deg) translateZ(${(t * 20).toFixed(1)}px)`;
+    }
+
+    /* Mobiler Service: Lauftext */
+    for (const el of tracks) {
+      const r = el.parentElement.getBoundingClientRect();
+      if (r.bottom < 0 || r.top > vh) continue;
+      const x = (r.top + r.height / 2 - vh / 2) * .55 * Number(el.dataset.dir);
+      el.style.transform = `translate3d(${(x - el.offsetWidth * .25).toFixed(1)}px,0,0)`;
+    }
+  }
+  const onScroll = () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } };
+  if (!reduce) {
+    addEventListener('scroll', onScroll, { passive: true });
+    addEventListener('resize', onScroll);
+    update();
+  } else {
+  }
+
+  /* ── Sprache (DE / EN / NL) und Hell/Dunkel ── */
+  const TT = [["Zum Inhalt springen", "Skip to content", "Naar de inhoud"], ["Leistungen", "Services", "Diensten"], ["Warum", "Why", "Waarom"], ["Über uns", "About us", "Over ons"], ["Bewertungen", "Reviews", "Reviews"], ["Kontakt", "Contact", "Contact"], ["Wir bringen Ihr Boot zurück in <em>Bestform.</em>", "We bring your boat back to <em>top form.</em>", "Wij brengen uw boot terug in <em>topvorm.</em>"], ["Mobiler Detailing-Service für Boote und Yachten.", "Mobile detailing service for boats and yachts.", "Mobiele detailingservice voor boten en jachten."], ["Aufbereitung sichern", "Book your detailing", "Boek uw detailing"], ["Uns kontaktieren", "Contact us", "Neem contact op"], ["Unsere <em>Leistungen</em>", "Our <em>services</em>", "Onze <em>diensten</em>"], ["Gründliche Außenreinigung", "Thorough exterior cleaning", "Grondige buitenreiniging"], ["Entfernung von Schmutz, Salz &amp; Ablagerungen.", "Removal of dirt, salt &amp; deposits.", "Verwijdering van vuil, zout &amp; aanslag."], ["Wasserlinien &amp; Ablagerungen", "Waterlines &amp; deposits", "Waterlijnen &amp; aanslag"], ["Kalk- &amp; Wasserlinien werden rückstandslos entfernt.", "Limescale and waterlines are removed without a trace.", "Kalk- en waterlijnen worden zonder residu verwijderd."], ["Gelcoat-Reinigung &amp; Politur", "Gelcoat cleaning &amp; polishing", "Gelcoat reinigen &amp; polijsten"], ["Für tiefen Glanz und ein neuwertiges Erscheinungsbild.", "For deep gloss and a like-new appearance.", "Voor diepe glans en een als-nieuw uiterlijk."], ["Edelstahl-Aufbereitung", "Stainless steel restoration", "Roestvrij staal opknappen"], ["Reling, Beschläge und Metallteile werden zum Strahlen gebracht.", "Railings, fittings and metal parts are brought back to a shine.", "Reling, beslag en metalen onderdelen gaan weer schitteren."], ["Innenreinigung", "Interior cleaning", "Interieurreiniging"], ["Kunststoffflächen, Konsolen und alle Innenbereiche.", "Plastic surfaces, consoles and all interior areas.", "Kunststof oppervlakken, consoles en alle binnenruimtes."], ["Teppich- &amp; Polsterreinigung", "Carpet &amp; upholstery cleaning", "Tapijt- &amp; stoffeerreiniging"], ["Tiefenreinigung für Teppiche, Polster und Sitze.", "Deep cleaning for carpets, upholstery and seats.", "Dieptereiniging voor tapijt, bekleding en zitplaatsen."], ["Keramikversiegelung", "Ceramic coating", "Keramische coating"], ["Lang anhaltender Schutz vor UV-Strahlung, Wasser &amp; Schmutz.", "Long-lasting protection against UV radiation, water &amp; dirt.", "Langdurige bescherming tegen uv-straling, water &amp; vuil."], ["Die Keramikschicht verbindet sich mit dem Gelcoat und bildet eine harte, glatte Oberfläche. Wasser und Schmutz perlen ab, die Sonne greift die Oberfläche weniger an, und die Pflege wird leichter.", "The ceramic layer bonds with the gelcoat and forms a hard, smooth surface. Water and dirt bead off, the sun attacks the surface less, and maintenance becomes easier.", "De keramische laag hecht aan de gelcoat en vormt een hard, glad oppervlak. Water en vuil parelen af, de zon tast het oppervlak minder aan en het onderhoud wordt gemakkelijker."], ["Antifouling", "Antifouling", "Antifouling"], ["Schutzanstrich für den Unterwasserbereich – für weniger Bewuchs und mehr Leistung.", "Protective paint for the underwater hull – for less fouling and better performance.", "Beschermende verf voor het onderwaterschip – voor minder aangroei en meer prestaties."], ["Der Anstrich unter der Wasserlinie verhindert, dass sich Algen und Muscheln festsetzen. Das Boot gleitet besser durchs Wasser und der Rumpf bleibt länger sauber.", "The paint below the waterline stops algae and mussels from settling. The boat glides better through the water and the hull stays clean for longer.", "De verf onder de waterlijn voorkomt dat algen en mosselen zich vastzetten. De boot glijdt beter door het water en de romp blijft langer schoon."], ["Warum das wichtig ist", "Why it matters", "Waarom dit belangrijk is"], ["Schutz, der sich <em>auszahlt</em>", "Protection that <em>pays off</em>", "Bescherming die <em>loont</em>"], ["Schutz", "Protection", "Bescherming"], ["Versiegelte Oberflächen halten Sonne, Wasser und Witterung länger stand. Das schützt vor UV-Schäden und Verwitterung.", "Sealed surfaces withstand sun, water and weather for longer. This protects against UV damage and weathering.", "Verzegelde oppervlakken weerstaan zon, water en weer langer. Dat beschermt tegen uv-schade en verwering."], ["Werterhalt", "Value", "Waarde"], ["Ein gepflegtes Boot behält seinen Wert – auch beim Wiederverkauf.", "A well-kept boat holds its value – also when you resell it.", "Een goed onderhouden boot behoudt zijn waarde – ook bij wederverkoop."], ["Pflege", "Care", "Onderhoud"], ["Geschützte Oberflächen bleiben länger sauber und lassen sich leichter pflegen. Weniger Aufwand in Zukunft.", "Protected surfaces stay clean for longer and are easier to maintain. Less effort in the future.", "Beschermde oppervlakken blijven langer schoon en zijn makkelijker te onderhouden. Minder moeite in de toekomst."], ["Glanz", "Shine", "Glans"], ["Sichtbar mehr Glanz und ein gepflegtes Erscheinungsbild, das man schon vom Steg aus sieht.", "Visibly more shine and a well-kept look you can already see from the pier.", "Zichtbaar meer glans en een verzorgd uiterlijk dat je al vanaf de steiger ziet."], ["Für wen ist das?", "Who is it for?", "Voor wie is dit?"], ["Für Yachten, Segel-, Sport-, Freizeit- und Angelboote. Wir passen unsere Leistungen an Ihr Boot an.", "For yachts, sailing, sport, leisure and fishing boats. We tailor our services to your boat.", "Voor jachten, zeil-, sport-, plezier- en hengelboten. Wij stemmen onze diensten af op uw boot."], ["Mobiler Service", "Mobile service", "Mobiele service"], ["Wir kommen zu Ihnen – flexibel, zuverlässig und direkt vor Ort in Köln und Umkreis.", "We come to you – flexible, reliable and right on site in Cologne and the surrounding area.", "Wij komen naar u toe – flexibel, betrouwbaar en direct ter plaatse in Keulen en omgeving."], ["Köln und Umkreis", "Cologne and surroundings", "Keulen en omgeving"], ["Das sagen <em>Kunden.</em>", "What <em>customers</em> say.", "Dit zeggen <em>klanten.</em>"], ["Echte Google-Bewertungen, 5 von 5 Sternen.", "Real Google reviews, 5 out of 5 stars.", "Echte Google-reviews, 5 van de 5 sterren."], ["Google-Bewertung", "Google review", "Google-review"], ["Das sind <em>wir.</em>", "This is <em>us.</em>", "Dit zijn <em>wij.</em>"], ["Hinter Prestige stehen wir beide. Wir betreuen jedes Boot persönlich – von der ersten Beratung bis zum Finish.", "Prestige is the two of us. We look after every boat personally – from the first consultation to the finish.", "Achter Prestige staan wij tweeën. Wij verzorgen elke boot persoonlijk – van het eerste advies tot de finish."], ["Jetzt Termin <em>anfragen</em>", "Request your <em>appointment</em>", "Vraag nu uw <em>afspraak aan</em>"], ["Wir melden uns persönlich bei Ihnen – unverbindlich und diskret.", "We will get back to you personally – without obligation and discreetly.", "Wij nemen persoonlijk contact met u op – vrijblijvend en discreet."], ["Direkt erreichbar", "Reach us directly", "Direct bereikbaar"], ["Rufen Sie an, schreiben Sie uns oder nutzen Sie das Formular.", "Call us, write to us or use the form.", "Bel ons, schrijf ons of gebruik het formulier."], ["Anfrage senden", "Send request", "Aanvraag versturen"], ["Füllen Sie das Formular aus, wir melden uns persönlich bei Ihnen.", "Fill in the form and we will get back to you personally.", "Vul het formulier in en wij nemen persoonlijk contact met u op."], ["Name *", "Name *", "Naam *"], ["Boot", "Boat", "Boot"], ["Bitte wählen", "Please select", "Maak een keuze"], ["Yacht", "Yacht", "Jacht"], ["Motorboot", "Motorboat", "Motorboot"], ["Segelboot", "Sailboat", "Zeilboot"], ["Sportboot", "Sport boat", "Sportboot"], ["Angelboot", "Fishing boat", "Hengelboot"], ["Anderes", "Other", "Anders"], ["Standort / Liegeplatz", "Location / berth", "Locatie / ligplaats"], ["Nachricht", "Message", "Bericht"], ["Wie sollen wir Sie erreichen? *", "How should we reach you? *", "Hoe kunnen wij u bereiken? *"], ["E-Mail", "Email", "E-mail"], ["Ihre E-Mail-Adresse *", "Your email address *", "Uw e-mailadres *"], ["Ihre WhatsApp-Nummer *", "Your WhatsApp number *", "Uw WhatsApp-nummer *"], ["Öffnet Ihr E-Mail-Programm mit einer vorausgefüllten Nachricht.", "Opens your email app with a pre-filled message.", "Opent uw e-mailprogramma met een vooraf ingevuld bericht."], ["z. B. Yachthafen Roermond", "e.g. Roermond marina", "bijv. jachthaven Roermond"], ["Bootslänge, gewünschte Leistung …", "Boat length, desired service …", "Bootlengte, gewenste dienst …"], ["Hauptnavigation", "Main navigation", "Hoofdnavigatie"], ["5 von 5 Sternen", "5 out of 5 stars", "5 van de 5 sterren"], ["Öffnet Ihr E-Mail-Programm mit einer vorausgefüllten Nachricht.", "Opens your email app with a pre-filled message.", "Opent uw e-mailprogramma met een vooraf ingevuld bericht."], ["Impressum", "Legal notice", "Impressum"], ["Datenschutz", "Privacy policy", "Privacybeleid"], ["Rechtliches", "Legal", "Juridisch"], ["Außenreinigung", "Exterior cleaning", "Buitenreiniging"], ["Schonende Handwäsche von Rumpf, Aufbau, Deck und Cockpit mit bootsgerechten Reinigern. Wir entfernen jeglichen Schmutz von der Gelcoat-Oberfläche und reinigen gründlich, ohne Material oder Beschläge anzugreifen.", "Gentle hand wash of hull, superstructure, deck and cockpit with boat-safe cleaners. We remove all dirt from the gelcoat surface and clean thoroughly without harming materials or fittings.", "Zorgvuldige handwas van romp, opbouw, dek en kuip met reinigers die geschikt zijn voor boten. Wij verwijderen al het vuil van het gelcoatoppervlak en reinigen grondig, zonder materiaal of beslag aan te tasten."], ["Gelcoat- und Lackaufbereitung", "Gelcoat and paint restoration", "Gelcoat- en lakrestauratie"], ["Professionelle, mehrstufige Politur, angepasst an den Zustand Ihrer Oberfläche. Wir entfernen Kratzer, Macken und Oxidation. Das Ergebnis ist ein gleichmäßiger, tiefer Glanz mit klarer Spiegelung.", "Professional multi-stage polishing, tailored to the condition of your surface. We remove scratches, blemishes and oxidation. The result is an even, deep gloss with a clear reflection.", "Professionele polijstbehandeling in meerdere stappen, afgestemd op de staat van uw oppervlak. Wij verwijderen krassen, beschadigingen en oxidatie. Het resultaat is een gelijkmatige, diepe glans met een heldere weerspiegeling."], ["Keramikversiegelung", "Ceramic coating", "Keramische coating"], ["Langlebiger Schutz für Gelcoat und Lack nach der Politur. Die Keramikschicht schützt vor UV-Strahlung und Oxidation, sorgt für Abperleffekt und intensiven Glanz und macht die Reinigung deutlich leichter.", "Long-lasting protection for gelcoat and paint after polishing. The ceramic layer protects against UV radiation and oxidation, makes water bead off, adds an intense gloss and makes cleaning much easier.", "Langdurige bescherming voor gelcoat en lak na het polijsten. De keramische laag beschermt tegen uv-straling en oxidatie, zorgt voor een parelend effect en intense glans en maakt het reinigen veel eenvoudiger."], ["Innendetailing", "Interior detailing", "Interieurdetailing"], ["Gründliche Reinigung und Pflege des gesamten Innenraums: Edelstahl und Reling, Teakholz, Kunststoff, Leder und Polster, Textilien und Teppiche, Glasflächen sowie Sanitär- und Pantrybereich. Jedes Material wird passend behandelt.", "Thorough cleaning and care of the entire interior: stainless steel and railings, teak, plastics, leather and upholstery, textiles and carpets, glass surfaces, and the bathroom and galley. Every material is treated the right way.", "Grondige reiniging en verzorging van het volledige interieur: rvs en reling, teakhout, kunststof, leer en bekleding, textiel en tapijt, glasoppervlakken en het sanitair- en kombuisgedeelte. Elk materiaal krijgt de juiste behandeling."], ["Antifouling", "Antifouling", "Antifouling"], ["Schutz des Unterwasserschiffs vor Algen, Muscheln und Seepocken. Wir reinigen den Rumpf, bereiten den Untergrund vor und tragen das Antifouling fachgerecht auf, abgestimmt auf Gewässer und Nutzung.", "Protection of the underwater hull against algae, mussels and barnacles. We clean the hull, prepare the surface and apply the antifouling professionally, matched to your waters and how you use the boat.", "Bescherming van het onderwaterschip tegen algen, mosselen en zeepokken. Wij reinigen de romp, bereiden de ondergrond voor en brengen de antifouling vakkundig aan, afgestemd op het vaarwater en het gebruik."], ["Vorher / Nachher", "Before / After", "Voor / Na"], ["Der Unterschied, <em>sichtbar.</em>", "The difference, <em>visible.</em>", "Het verschil, <em>zichtbaar.</em>"], ["Derselbe Rumpf aus derselben Perspektive. Ziehen Sie den Regler und vergleichen Sie den Zustand vor und nach unserer Aufbereitung.", "The same hull from the same angle. Drag the slider to compare its condition before and after our detailing.", "Dezelfde romp vanuit hetzelfde perspectief. Sleep de schuifregelaar en vergelijk de staat voor en na onze behandeling."], ["Vorher", "Before", "Voor"], ["Nachher", "After", "Na"], ["Stumpfer Rumpf, Wasserflecken und Ablagerungen.", "Dull hull, water spots and deposits.", "Doffe romp, watervlekken en aanslag."], ["Gereinigt und wieder auf Hochglanz gebracht.", "Cleaned and brought back to a high gloss.", "Gereinigd en weer op hoogglans gebracht."], ["Vorher-Nachher-Vergleich", "Before and after comparison", "Voor-en-na-vergelijking"]];
+  const M = {
+    de: { name: 'Bitte nennen Sie uns Ihren Namen.', kanal: 'Bitte wählen Sie E-Mail oder WhatsApp.', mail: 'Bitte geben Sie eine gültige E-Mail-Adresse an.', wa: 'Bitte geben Sie Ihre WhatsApp-Nummer an.', ok: 'Vielen Dank. Bitte senden Sie die vorbereitete Nachricht in Ihrem E-Mail-Programm ab.', menuOpen: 'Menü öffnen', menuClose: 'Menü schließen', theme: 'Hell/Dunkel wechseln', title: 'Prestige Boat Detailing – Professionelle Bootsaufbereitung in Köln' },
+    en: { name: 'Please tell us your name.', kanal: 'Please choose email or WhatsApp.', mail: 'Please enter a valid email address.', wa: 'Please enter your WhatsApp number.', ok: 'Thank you. Please send the prepared message in your email app.', menuOpen: 'Open menu', menuClose: 'Close menu', theme: 'Switch light/dark', title: 'Prestige Boat Detailing – Professional boat detailing in Cologne' },
+    nl: { name: 'Vul uw naam in.', kanal: 'Kies e-mail of WhatsApp.', mail: 'Vul een geldig e-mailadres in.', wa: 'Vul uw WhatsApp-nummer in.', ok: 'Hartelijk dank. Verstuur het voorbereide bericht in uw e-mailprogramma.', menuOpen: 'Menu openen', menuClose: 'Menu sluiten', theme: 'Licht/donker wisselen', title: 'Prestige Boat Detailing – Professionele bootdetailing in Keulen' }
+  };
+  const LI = { de: 1 - 1, en: 1, nl: 2 };
+  let lang = ['de', 'en', 'nl'].includes(document.documentElement.lang) ? document.documentElement.lang : 'de';
+  const save = (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} };
+  const langBtn = $('#langBtn'), langMenu = $('#langMenu');
+  function setLang(l, persist) {
+    lang = l; const i = LI[l];
+    document.documentElement.lang = l;
+    $$('[data-i]').forEach(el => { el.innerHTML = TT[el.dataset.i][i]; });
+    $$('[data-ip]').forEach(el => el.setAttribute('placeholder', TT[el.dataset.ip][i]));
+    $$('[data-ia]').forEach(el => el.setAttribute('aria-label', TT[el.dataset.ia][i]));
+    $('#langCur').textContent = l.toUpperCase();
+    langMenu.querySelectorAll('button').forEach(b => b.setAttribute('aria-current', String(b.dataset.l === l)));
+    const open = $('#mnav') && $('#mnav').classList.contains('open');
+    $('#burger').setAttribute('aria-label', open ? M[l].menuClose : M[l].menuOpen);
+    document.title = M[l].title;
+    $$('.f-err').forEach(e => { e.textContent = ''; });
+    const st = $('#fStatus'); if (st) st.textContent = '';
+    if (persist) save('pbd-lang', l);
+  }
+  const closeLang = () => { langMenu.classList.remove('open'); langBtn.setAttribute('aria-expanded', 'false'); };
+  langBtn.addEventListener('click', e => { e.stopPropagation(); const o = langMenu.classList.toggle('open'); langBtn.setAttribute('aria-expanded', String(o)); });
+  langMenu.querySelectorAll('button').forEach(b => b.addEventListener('click', () => { setLang(b.dataset.l, true); closeLang(); }));
+  document.addEventListener('click', e => { if (!langMenu.contains(e.target)) closeLang(); });
+  addEventListener('keydown', e => { if (e.key === 'Escape') closeLang(); });
+
+  const msgEl = $('#f-msg');
+  if (msgEl) { const fit = () => { msgEl.style.height = 'auto'; msgEl.style.height = Math.max(43, msgEl.scrollHeight + 1) + 'px'; }; msgEl.addEventListener('input', fit); }
+
+  /* ── Handy-Menü ── */
+  const burger = $('#burger'), mnav = $('#mnav');
+  const setMenu = open => {
+    mnav.classList.toggle('open', open);
+    mnav.setAttribute('aria-hidden', String(!open));
+    open ? mnav.removeAttribute('inert') : mnav.setAttribute('inert', '');
+    burger.setAttribute('aria-expanded', String(open));
+    burger.setAttribute('aria-label', open ? M[lang].menuClose : M[lang].menuOpen);
+    document.body.style.overflow = open ? 'hidden' : '';
+  };
+  burger.addEventListener('click', () => setMenu(!mnav.classList.contains('open')));
+  mnav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+  addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
+  matchMedia('(min-width:961px)').addEventListener('change', e => { if (e.matches) setMenu(false); });
+
+  /* ── Formular: Rückkanal E-Mail oder WhatsApp ist Pflicht ── */
+  const form = $('#form'), status = $('#fStatus');
+  const reachMail = $('#reach-mail'), reachWa = $('#reach-wa');
+  const showReach = (el, on) => {
+    if (on) { el.classList.add('show'); requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add('in'))); }
+    else el.classList.remove('show', 'in');
+  };
+  form.querySelectorAll('input[name=kanal]').forEach(r => r.addEventListener('change', () => {
+    $('#err-kanal').textContent = '';
+    showReach(reachMail, r.value === 'E-Mail' && r.checked);
+    showReach(reachWa, r.value === 'WhatsApp' && r.checked);
+  }));
+  const setErr = (id, msg) => { $('#err-' + id).textContent = msg; return !msg; };
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    status.textContent = '';
+    const v = n => form.elements[n].value.trim();
+    const kanal = (form.querySelector('input[name=kanal]:checked') || {}).value;
+    let ok = true;
+    ok = setErr('name', v('name') ? '' : 'Bitte nennen Sie uns Ihren Namen.') && ok;
+    ok = setErr('kanal', kanal ? '' : 'Bitte wählen Sie E-Mail oder WhatsApp.') && ok;
+    if (kanal === 'E-Mail') ok = setErr('mail', /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v('mail')) ? '' : 'Bitte geben Sie eine gültige E-Mail-Adresse an.') && ok;
+    if (kanal === 'WhatsApp') ok = setErr('wa', v('wa').replace(/\D/g, '').length >= 7 ? '' : 'Bitte geben Sie Ihre WhatsApp-Nummer an.') && ok;
+    if (!ok) { const bad = form.querySelector('.f-err:not(:empty)'); if (bad) bad.scrollIntoView({ block: 'center', behavior: reduce ? 'auto' : 'smooth' }); return; }
+    const kontakt = kanal === 'E-Mail' ? v('mail') : v('wa');
+    const body = [
+      'Name: ' + v('name'),
+      'Standort: ' + (v('ort') || '–'),
+      'Rückmeldung per: ' + kanal + ' (' + kontakt + ')',
+      '', v('nachricht')
+    ].join('\n');
+    location.href = 'mailto:boatdetailing.prestige@gmail.com?subject=' + encodeURIComponent('Terminanfrage – ' + v('name')) + '&body=' + encodeURIComponent(body);
+    status.textContent = M[lang].ok;
+  });
+
+  $('#year').textContent = new Date().getFullYear();
+  if (lang !== 'de') setLang(lang, false); else setLang('de', false);
+})();
+</script>
+
+<script>
+/* Leistungs-Video: spielt stumm ab, sobald es zu gut der Hälfte im Bild ist, pausiert außerhalb, keine Schleife */
+(() => {
+  const v = document.getElementById('reelVid'), f = document.getElementById('reelFrame');
+  const play = document.getElementById('reelPlay'), snd = document.getElementById('reelSnd');
+  if (!v) return;
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let userPaused = false;
+  const start = () => { if (v.ended) v.currentTime = 0; const p = v.play(); if (p) p.catch(() => {}); };
+  v.addEventListener('play', () => f.classList.add('playing'));
+  v.addEventListener('pause', () => f.classList.remove('playing'));
+  v.addEventListener('ended', () => f.classList.remove('playing'));
+  play.addEventListener('click', () => { userPaused = false; start(); });
+  v.addEventListener('click', () => { if (v.paused) { userPaused = false; start(); } else { userPaused = true; v.pause(); } });
+  const fs = document.getElementById('reelFs');
+  fs.addEventListener('click', () => {
+    const d = document;
+    if (d.fullscreenElement || d.webkitFullscreenElement) { (d.exitFullscreen || d.webkitExitFullscreen).call(d); return; }
+    if (f.requestFullscreen) f.requestFullscreen().catch(() => {});
+    else if (f.webkitRequestFullscreen) f.webkitRequestFullscreen();
+    else if (v.webkitEnterFullscreen) v.webkitEnterFullscreen();   /* iPhone: nativer Vollbild-Player */
+    userPaused = false; start();
+  });
+  snd.addEventListener('click', () => { v.muted = !v.muted; snd.setAttribute('aria-pressed', String(!v.muted)); if (!v.muted && v.paused) { userPaused = false; start(); } });
+  if (reduce) return;
+  new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { if (!userPaused && !v.ended && v.paused) start(); }
+    else if (!v.paused && !(document.fullscreenElement || document.webkitFullscreenElement)) v.pause();
+  }), { threshold: .55 }).observe(f);
+})();
+</script>
+</body>
+</html>
