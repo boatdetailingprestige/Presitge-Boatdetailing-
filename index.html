@@ -1054,9 +1054,9 @@
   matchMedia('(min-width:961px)').addEventListener('change', e => { if (e.matches) setMenu(false); });
 
   /* ── Formular: Rückkanal E-Mail oder WhatsApp ist Pflicht.
-        Versand im Hintergrund über FormSubmit (formsubmit.co) an FORM_TO – beim Kunden öffnet sich nichts.
-        Einmalig: Die erste Anfrage löst bei FORM_TO eine Bestätigungs-Mail von FormSubmit aus, die bestätigt werden muss. ── */
-  const FORM_TO = 'info@prestigeboatdetailing.de';
+        Versand im Hintergrund über Web3Forms (web3forms.com) – beim Kunden öffnet sich nichts.
+        Die Anfragen gehen an die E-Mail-Adresse, für die der Zugangsschlüssel erstellt wurde (info@prestigeboatdetailing.de). ── */
+  const W3F_KEY = '96d9bd6e-3f07-443c-9da6-098849d98342';
   const form = $('#form'), status = $('#fStatus');
   const reachMail = $('#reach-mail'), reachWa = $('#reach-wa');
   const showReach = (el, on) => {
@@ -1083,9 +1083,9 @@
     if (form.elements._honey.value) return;
     const kontakt = kanal === 'E-Mail' ? v('mail') : v('wa');
     const data = {
-      _subject: 'Neue Anfrage über die Website – ' + v('name'),
-      _template: 'table',
-      _captcha: 'false',
+      access_key: W3F_KEY,
+      subject: 'Neue Anfrage über die Website – ' + v('name'),
+      from_name: 'Website Prestige Boat Detailing',
       'Name': v('name'),
       'Rückmeldung per': kanal,
       [kanal === 'E-Mail' ? 'E-Mail des Kunden' : 'WhatsApp-Nummer des Kunden']: kontakt,
@@ -1093,17 +1093,15 @@
       'Nachricht': v('nachricht') || '–',
       'Sprache der Seite': lang.toUpperCase()
     };
-    if (kanal === 'E-Mail') data._replyto = kontakt;
+    if (kanal === 'E-Mail') data.replyto = kontakt;
     const btn = form.querySelector('button[type=submit]');
     btn.disabled = true; form.setAttribute('aria-busy', 'true');
     status.textContent = M[lang].sending;
-    fetch('https://formsubmit.co/ajax/' + FORM_TO, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify(data)
-    }).then(r => r.ok ? r.json() : Promise.reject(r.status))
+    const fd = new FormData();
+    Object.entries(data).forEach(([k, val]) => fd.append(k, val));
+    fetch('https://api.web3forms.com/submit', { method: 'POST', headers: { 'Accept': 'application/json' }, body: fd }).then(r => r.ok ? r.json() : Promise.reject(r.status))
       .then(res => {
-        if (res && (res.success === true || res.success === 'true')) { status.textContent = M[lang].ok; form.reset(); showReach(reachMail, false); showReach(reachWa, false); }
+        if (res && res.success === true) { status.textContent = M[lang].ok; form.reset(); showReach(reachMail, false); showReach(reachWa, false); }
         else throw res;
       })
       .catch(() => { status.textContent = M[lang].fail; })
