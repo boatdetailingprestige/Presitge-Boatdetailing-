@@ -91,3 +91,4 @@ a{color:inherit;text-decoration:none}
 .foot-legal a{padding:6px 0;color:var(--text-2);border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
 .foot-legal a:hover,.foot-legal a:focus-visible,.foot-legal a[aria-current="page"]{color:var(--text);border-color:var(--hair)}
 .foot-legal a:active{color:var(--blue-hi)}
+.foot-seat{padding:6px 0;color:var(--text-2)}
